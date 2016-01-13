@@ -14,6 +14,7 @@ body {
     top: 0;
     width: 100%;
     border-bottom: 1px solid white;
+    z-index: 10;
 }
 
 #tnavbarli {
@@ -125,6 +126,12 @@ h3{
     font-size: 25;
     color: white;
     text-align: center;
+}
+#calculator{
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    height: 500px;
 }
 
 #grad1 {

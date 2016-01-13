@@ -4,7 +4,7 @@
     <title>Calc Project</title>
     <link rel="stylesheet" type="text/css" href="maincss.css"</link>
  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'> 
-
+<script src="https://www.desmos.com/api/v0.4/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
     </head>
 <body>
 
@@ -34,10 +34,11 @@
         <div id = "mainbodycontent">
         
         <h1>Derivatives</h1>
-        
+        <div id="calculator"></div>
+
         <h2>Definition</h2>
         <h4>Some text some text some text some text</h4>
-        
+       
         <h2>Power Rule</h2>
         <h4>Some text some text some text some text</h4>
         
@@ -93,3 +94,15 @@
  </div>
 </body>
 </html>
+   <!-- Java scripts -->    
+        <script>
+  var elt = document.getElementById('calculator');
+  var calculator = Desmos.Calculator(elt);
+ calculator.setExpressions([{id:'graph1', latex:'f(x) =x^2'}, 
+                            {id:'a-slider', latex:'a=-1'},
+                           {id:'h-slider', latex:'h = 1'},
+                           {id:'graph4', latex:'m = (f(a+h)-f(a))/h'},
+                           {id:'graph5', latex:'y = m(x-a) + f(a)'},
+                           {id:'point1', latex:'(a,f(a))'},
+                           {id:'point2', latex:'(a+h,f(a+h))'}]);
+</script>
