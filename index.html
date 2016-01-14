@@ -7,6 +7,56 @@
 <script src="https://www.desmos.com/api/v0.4/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     </head>
+    
+
+    
+     
+    <!-- start jquery-->
+    <script>
+    $(document).ready(function(){
+   
+    $('body').css('opacity', '0').fadeTo(1000, 1,'swing'); 
+   
+/*
+         $("#mainbodycontent")
+    .css("margin-left",-$(this).width())
+    .animate({
+        marginLeft:'0%'
+    }, 0);
+        
+           $("#mainbodycontent")
+    .css("margin-left",-$(this).width())
+    .animate({
+        marginLeft:'10%'
+    }, 2500);
+        ////*/
+        
+       
+        $('#tnavbar').hide();
+        $('#tnavbar').slideDown(2500);
+         
+        $('#snavbar').hide();
+        $('#snavbar').slideDown(2500);
+        
+       $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname) {
+      var $target = $(this.hash);
+      $target = $target.length && $target
+      || $('[name=' + this.hash.slice(1) +']');
+      if ($target.length) {
+        var targetOffset = $target.offset().top;
+        $('html,body')
+        .animate({scrollTop: targetOffset}, 1000);
+       return false;
+      }
+    }
+  });
+	
+});
+        </script>
+    
+    
 <body>
 <div id = "wrapper">
 <ul id = "tnavbar">
@@ -96,8 +146,9 @@
     </div>
 </body>
 </html>
-   
-        <!-- Java script-->    
+    
+        
+           <!-- Java script-->    
         <script>
   var elt = document.getElementById('calculator');
   var calculator = Desmos.Calculator(elt);
@@ -109,49 +160,7 @@
                            {id:'point1', latex:'(a,f(a))'},
                            {id:'point2', latex:'(a+h,f(a+h))'}]);
 </script>
-
-    <script>
-    <!-- end js--> 
-    <!-- start jquery-->
-    $(document).ready(function(){
+        
+ 
    
-    $('body').css('opacity', '0').fadeTo(1000, 1,'swing'); 
-   
-/*
-         $("#mainbodycontent")
-    .css("margin-left",-$(this).width())
-    .animate({
-        marginLeft:'0%'
-    }, 0);
-        
-           $("#mainbodycontent")
-    .css("margin-left",-$(this).width())
-    .animate({
-        marginLeft:'10%'
-    }, 2500);
-        ////*/
-        
-       
-        $('#tnavbar').hide();
-        $('#tnavbar').slideDown(2500);
-         
-        $('#snavbar').hide();
-        $('#snavbar').slideDown(2500);
-        
-       $('a[href*=#]').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-    && location.hostname == this.hostname) {
-      var $target = $(this.hash);
-      $target = $target.length && $target
-      || $('[name=' + this.hash.slice(1) +']');
-      if ($target.length) {
-        var targetOffset = $target.offset().top;
-        $('html,body')
-        .animate({scrollTop: targetOffset}, 1000);
-       return false;
-      }
-    }
-  });
-	
-});
-        </script>
+ 
