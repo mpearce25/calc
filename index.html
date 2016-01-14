@@ -3,67 +3,26 @@
 <head>
     <title>Calc Project</title>
     <link rel="stylesheet" type="text/css" href="maincss.css"</link>
+
  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'> 
 <link rel="shortcut icon" type="image/png" href="favicon.png"/>
     <script src="https://www.desmos.com/api/v0.4/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
 
     </head>
     
 
-    
-     
-    <!-- start jquery-->
-    <script>
-    $(document).ready(function(){
-   
-    $('body').css('opacity', '0').fadeTo(1000, 1,'swing'); 
-   
-/*
-         $("#mainbodycontent")
-    .css("margin-left",-$(this).width())
-    .animate({
-        marginLeft:'0%'
-    }, 0);
-        
-           $("#mainbodycontent")
-    .css("margin-left",-$(this).width())
-    .animate({
-        marginLeft:'10%'
-    }, 2500);
-        ////*/
-        
-       
-        $('#tnavbar').hide();
-        $('#tnavbar').slideDown(2500);
-         
-        $('#snavbar').hide();
-        $('#snavbar').slideDown(2500);
-        
-       $('a[href*=#]').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-    && location.hostname == this.hostname) {
-      var $target = $(this.hash);
-      $target = $target.length && $target
-      || $('[name=' + this.hash.slice(1) +']');
-      if ($target.length) {
-        var targetOffset = $target.offset().top;
-        $('html,body')
-        .animate({scrollTop: targetOffset}, 1000);
-       return false;
-      }
-    }
-  });
-	
-});
-        </script>
-    
+ 
     
 <body>
 <div id = "wrapper">
     
-
+<progress value="0" id="progressBar">
+  <div class="progress-container">
+    <span class="progress-bar"></span>
+  </div>
+</progress>
     
 <ul id = "tnavbar">
   <li id = "tnavbarli"><a class="active" href="index.html" >Content</a></li>
@@ -91,11 +50,14 @@
         <div id = "mainbodycontent">
         
         <h1>Derivatives</h1>
-        <div id="calculator"></div>
-
+            <div id="calculator"></div>
+            
         <h2>Definition</h2>
         <h4>Some text some text some text some text 3&frasl;5</h4>
        
+
+
+            
         <h2>Power Rule</h2>
         <h4>Some text some text some text some text</h4>
         
@@ -165,4 +127,134 @@
                            {id:'graph5', latex:'y = m(x-a) + f(a)'},
                            {id:'point1', latex:'(a,f(a))'},
                            {id:'point2', latex:'(a+h,f(a+h))'}]);
+            
+            
+            $(document).ready(function(){
+    
+    var getMax = function(){
+        return $(document).height() - $(window).height();
+    }
+    
+    var getValue = function(){
+        return $(window).scrollTop();
+    }
+    
+    if('max' in document.createElement('progress')){
+        // Browser supports progress element
+        var progressBar = $('progress');
+        
+        // Set the Max attr for the first time
+        progressBar.attr({ max: getMax() });
+
+        $(document).on('scroll', function(){
+            // On scroll only Value attr needs to be calculated
+            progressBar.attr({ value: getValue() });
+        });
+      
+        $(window).resize(function(){
+            // On resize, both Max/Value attr needs to be calculated
+            progressBar.attr({ max: getMax(), value: getValue() });
+        });   
+    }
+    else {
+        var progressBar = $('.progress-bar'), 
+            max = getMax(), 
+            value, width;
+        
+        var getWidth = function(){
+            // Calculate width in percentage
+            value = getValue();            
+            width = (value/max) * 100;
+            width = width + '%';
+            return width;
+        }
+        
+        var setWidth = function(){
+            progressBar.css({ width: getWidth() });
+        }
+        
+        $(document).on('scroll', setWidth);
+        $(window).on('resize', function(){
+            // Need to reset the Max attr
+            max = getMax();
+            setWidth();
+        });
+    }
+});
+  $('#flat').addClass("active");
+  $('#progressBar').addClass('flat');
+    
+$(document).ready(function(){
+  
+  $(document).on('scroll', function(){
+
+      maxAttr = $('#progressBar').attr('max');
+      valueAttr = $('#progressBar').attr('value');
+      percentage = (valueAttr/maxAttr) * 100;
+      
+      if(percentage<49){
+        document.styleSheets[0].addRule('.semantic', 'color: red');
+        document.styleSheets[0].addRule('.semantic::-webkit-progress-value', 'background-color: red');
+        document.styleSheets[0].addRule('.semantic::-moz-progress-bar', 'background-color: red');
+      }
+      else if(percentage<98){
+        document.styleSheets[0].addRule('.semantic', 'color: orange');
+        document.styleSheets[0].addRule('.semantic::-webkit-progress-value', 'background-color: orange');
+        document.styleSheets[0].addRule('.semantic::-moz-progress-bar', 'background-color: orange');
+      }
+      else {
+        document.styleSheets[0].addRule('.semantic', 'color: green');
+        document.styleSheets[0].addRule('.semantic::-webkit-progress-value', 'background-color: green');
+        document.styleSheets[0].addRule('.semantic::-moz-progress-bar', 'background-color: green');
+      }      
+  });
+  
+});
+
 </script>
+    
+     <!-- start jquery-->
+    <script>
+    $(document).ready(function(){
+   
+    $('body').css('opacity', '0').fadeTo(1000, 1,'swing'); 
+   
+/*
+         $("#mainbodycontent")
+    .css("margin-left",-$(this).width())
+    .animate({
+        marginLeft:'0%'
+    }, 0);
+        
+           $("#mainbodycontent")
+    .css("margin-left",-$(this).width())
+    .animate({
+        marginLeft:'10%'
+    }, 2500);
+        ////*/
+        
+       
+        $('#tnavbar').hide();
+        $('#tnavbar').slideDown(2500);
+         
+        $('#snavbar').hide();
+        $('#snavbar').slideDown(2500);
+        
+       $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname) {
+      var $target = $(this.hash);
+      $target = $target.length && $target
+      || $('[name=' + this.hash.slice(1) +']');
+      if ($target.length) {
+        var targetOffset = $target.offset().top;
+        $('html,body')
+        .animate({scrollTop: targetOffset}, 1000);
+       return false;
+      }
+    }
+  });
+	
+});
+        </script>
+    
