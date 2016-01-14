@@ -2,27 +2,24 @@
 <html>
 <head>
     <title>Calc Project</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    
     <link rel="stylesheet" type="text/css" href="maincss.css"</link>
-
- <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'> 
-<link rel="shortcut icon" type="image/png" href="favicon.png"/>
-    <script src="https://www.desmos.com/api/v0.4/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'> 
+    
+    <script src="https://www.desmos.com/api/v0.4/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6">        </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
-
     </head>
-    
-
- 
-    
+   
 <body>
-<div id = "wrapper">
+    <div id = "wrapper">
     
-<progress value="0" id="progressBar">
-  <div class="progress-container">
-    <span class="progress-bar"></span>
-  </div>
-</progress>
+        <progress value="0" id="progressBar">
+            <div class="progress-container">
+        <span class="progress-bar"></span>
+        </div>
+            </progress>
     
 <ul id = "tnavbar">
   <li id = "tnavbarli"><a class="active" href="index.html" >Content</a></li>
@@ -54,10 +51,7 @@
             
         <h2>Definition</h2>
         <h4>Some text some text some text some text 3&frasl;5</h4>
-       
-
-
-            
+             
         <h2>Power Rule</h2>
         <h4>Some text some text some text some text</h4>
         
@@ -131,7 +125,8 @@
             
             $(document).ready(function(){
     
-    var getMax = function(){
+    
+                var getMax = function(){
         return $(document).height() - $(window).height();
     }
     
@@ -193,9 +188,9 @@ $(document).ready(function(){
       percentage = (valueAttr/maxAttr) * 100;
       
       if(percentage<49){
-        document.styleSheets[0].addRule('.semantic', 'color: red');
-        document.styleSheets[0].addRule('.semantic::-webkit-progress-value', 'background-color: red');
-        document.styleSheets[0].addRule('.semantic::-moz-progress-bar', 'background-color: red');
+        document.styleSheets[0].addRule('.semantic', 'color: green');
+        document.styleSheets[0].addRule('.semantic::-webkit-progress-value', 'background-color:                     rgb(50,120,220)');
+        document.styleSheets[0].addRule('.semantic::-moz-progress-bar', 'background-color: rgb(50,120,220)');
       }
       else if(percentage<98){
         document.styleSheets[0].addRule('.semantic', 'color: orange');
@@ -217,9 +212,9 @@ $(document).ready(function(){
     <script>
     $(document).ready(function(){
    
-    $('body').css('opacity', '0').fadeTo(1000, 1,'swing'); 
+    /*$('body').css('opacity', '0').fadeTo(1000, 1,'swing'); 
    
-/*
+
          $("#mainbodycontent")
     .css("margin-left",-$(this).width())
     .animate({
