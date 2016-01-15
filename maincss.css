@@ -3,6 +3,14 @@ body {
     margin:0;
    background-color: #314861; /* makes initial page load color before fade in */   
 }
+#grad1 {
+    
+   height: 100%;
+    background: #466368;
+  background: -webkit-linear-gradient( #314861, #E7E9BB);
+  background:    -moz-linear-gradient( #314861, #E7E9BB);
+  background:         linear-gradient( #314861, #E7E9BB);
+}
 
 /* Top Navigation Bar*/
 #tnavbar {
@@ -58,6 +66,12 @@ li a:hover:not(.active) {
     font-family: 'Roboto', sans-serif;
     
 }
+
+#jumptext{
+    font-size: 25;
+    color: white;
+    text-align: center;
+}
 /*end */
 
 #homediv{
@@ -66,6 +80,8 @@ li a:hover:not(.active) {
     height: 100%;
 
 }
+
+/*bar at the bottom*/
 #infobar{
 
     bottom: 0;
@@ -79,6 +95,9 @@ li a:hover:not(.active) {
    text-align:  center;
     padding-top: 15px;
 }
+/* */
+
+/* the main divs*/
 #mainbodycontent{
     width: 65%;
     margin-left: 10%;
@@ -127,11 +146,7 @@ h3{
     margin-top: 5%;
     margin-bottom: 55px;
 }
-#jumptext{
-    font-size: 25;
-    color: white;
-    text-align: center;
-}
+
 #calculator{
     margin-right: auto;
     margin-left: auto;
@@ -139,16 +154,9 @@ h3{
     height: 500px;
 }
 
-#grad1 {
-    
-   height: 100%;
-    background: #466368;
-  background: -webkit-linear-gradient( #314861, #E7E9BB);
-  background:    -moz-linear-gradient( #314861, #E7E9BB);
-  background:         linear-gradient( #314861, #E7E9BB);
-}
 
 
+/* organge read percent*/
 progress {
   /* Positioning */
   position: fixed;
@@ -173,7 +181,7 @@ progress {
   background-color: transparent;
 
   /* For IE10+, color of the progress bar */
-  color: red;
+  color: #FBB917;
 }
 
 progress::-webkit-progress-bar {
@@ -185,31 +193,7 @@ progress::-webkit-progress-bar {
 }
 
 .flat::-moz-progress-bar {
-  background-color: red;
-}
-
-.single::-webkit-progress-value {
-  background-color: transparent;
-  background-image: -webkit-linear-gradient(left, transparent, red);
-}
-
-.single::-moz-progress-bar {
-  background-color: transparent;
-  background-image: -moz-linear-gradient(left, transparent, red);
-}
-
-.multiple::-webkit-progress-value {
-  background-image: -webkit-linear-gradient(-45deg, 
-                               transparent 33%, rgba(0, 0, 0, .1) 33%, 
-                               rgba(0,0, 0, .1) 66%, transparent 66%),
-                      -webkit-linear-gradient(left, green, red);
-}
-
-.multiple::-moz-progress-bar {
-  background-image: -moz-linear-gradient(-45deg, 
-                               transparent 33%, rgba(0, 0, 0, .1) 33%, 
-                               rgba(0,0, 0, .1) 66%, transparent 66%),
-                      -moz-linear-gradient(left, green, red);
+  background-color: #FBB917;
 }
 
 .progress-container {
@@ -223,8 +207,9 @@ progress::-webkit-progress-bar {
 }
 
 .progress-bar {
-  background-color: red;
+  background-color: #FBB917;
   width: 50%;
   display: block;
   height: inherit;
 }
+/*  */

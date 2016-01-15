@@ -112,7 +112,9 @@
         
            <!-- Java script-->    
         <script>
-  var elt = document.getElementById('calculator');
+  
+            //desmos calc
+            var elt = document.getElementById('calculator');
   var calculator = Desmos.Calculator(elt);
  calculator.setExpressions([{id:'graph1', latex:'f(x) =x^2'}, 
                             {id:'a-slider', latex:'a=1'},
@@ -122,10 +124,8 @@
                            {id:'point1', latex:'(a,f(a))'},
                            {id:'point2', latex:'(a+h,f(a+h))'}]);
             
-            
-            $(document).ready(function(){
-    
-    
+         ///////////   
+     $(document).ready(function(){
                 var getMax = function(){
         return $(document).height() - $(window).height();
     }
@@ -207,7 +207,8 @@ $(document).ready(function(){
 });
 
 </script>
-    
+     <!-- end js-->
+        
      <!-- start jquery-->
     <script>
     $(document).ready(function(){
@@ -252,4 +253,6 @@ $(document).ready(function(){
 	
 });
         </script>
+        
+        <!-- end jquery -->
     
