@@ -30,7 +30,7 @@
     
 <ul id = "snavbar">
   <li><h2 id = "jumptext"><u>Page Contents</u></h2></li>
-    <li id = "snavbarli"><a href="#derivatives">Derivatives</a></li>
+    <li id = "snavbarli"><a href="#limits">Derivatives</a></li>
   <li id = "snavbarli"><a href="#extrema">Extrema</a></li>
   <li id = "snavbarli"><a href="#optimization">Optimization</a></li>
     </ul>    
@@ -42,21 +42,46 @@
     
    
     
-<A Name="derivatives">
+<A Name="limits">
 <div id = "homediv">  
         <div id = "mainbodycontent">
         
-        <h1>Derivatives</h1>
-            <div id="calculator"></div>
+        <h1>Limits &amp; Continuity</h1>
+            
             
         <h2>Definition</h2>
-        <h4>Some text some text some text some text 3&frasl;5</h4>
+        <h4>Limits describe how the outputs of a function f behave as x approaches a value of C. The value that the function approaches is denoted by the letter L. </h4>
+        <img class = 'centerimage'  src='images/limit_def.png'>
              
-        <h2>Power Rule</h2>
-        <h4>Some text some text some text some text</h4>
+        <h2>Properties of Limits</h2>
+        <h4>These rules allow you to analytically determine the limits of both polynomial and rational functions. By determining the limits of individual parts of a function and then applying these rules, the limit of complicated functions can be found.
+</h4>
+            <h3>Given &nbsp;<img src="images/limit_prop.png"></h3>
+            <h3>Sum Rule</h3>
+            <img class = "centerimage" src="images/sum_rule.png">
+            <hr></hr>
+            <h3>Difference Rule</h3>
+            <img class = "centerimage" src="images/diff_rule.png">
+            <hr></hr>
+            <h3>Product Rule</h3>
+            <img class = "centerimage" src="images/product_rule.png">
+            <hr></hr>
+            <h3>Quotient Rule</h3>
+            <img class = "centerimage" src="images/quotient_rule.png">
+            <hr></hr>
+            <h3>Power Rule</h3>
+            <img class = "centerimage" src="images/power_rule.png">
+            <hr></hr>
+            <h3>Polynomial Rule</h3>
+            <img class = "centerimage" src="images/poly_rule.png">
+            <h4>This rule is arrived at when using the 6 basic properties, as shown below the final limit is exactly the same as simply substituting the value x approaches.</h4>
+            <img class = "centerimage" src="images/poly_proof.jpg" style = "width: 95%;">
         
-        <h2>Chain Rule</h2>
-        <h4>Some text some text some text some text</h4>
+            <h2>Finding Limits Graphically &amp; Numerically</h2>
+            <h2>Application - Limits</h2>
+        <h4>Limits can be used to determine whether a function has continuity at a point. If a limit fails to exist at point C, C is a <i><b id = "h4bold">point of discontinuity</b></i> and the entire function is considered <i><b id = "h4bold">discontinuous</b></i>. Continuity at a point can be tested for interior points by evaluating the right and left hand limits as x → C. </h4>
+    <h3>If the limit fails to exist from either side, or the right and left handed limits are not equal the limit at that point does not exist. </h3>
+    <h4>To find if a function is continuous at endpoints, the right hand limit, x c+(f(x)), must exist for the function to be continuous at a left endpoint. The left hand limit, x c-(f(x)), must exist for the function to be continuous at a right endpoint. A function is continuous if it is continuous at every point in its domain. </h4>
         
         <h2>Product and Quotient Rule</h2>
         <A Name="extrema"> 
@@ -66,7 +91,7 @@
     <div  id = "mainbodycontent">
         <h1>Extrema</h1>
         <img id="mainbodycontentimg" src="images/extrema.png">
-        
+        <div id="calculator"></div>
         <h2>Finding Extrema</h2>
         <h3>Finding Critical Points</h3>
         <h4>Some text some text some text some text</h4>
