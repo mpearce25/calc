@@ -109,8 +109,14 @@ li a:hover:not(.active) {
     border: 1.5px solid #314861
 }
 
-#h4bold{
-    font-size: 35;
+strong{
+    font-size: 19px;
+    font-weight: 900;
+}
+figcaption{
+    margin-left: 15%;
+    margin-right: auto;
+    display: block;
 }
 hr{
     width: 75%;

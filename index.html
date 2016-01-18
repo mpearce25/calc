@@ -30,7 +30,7 @@
     
 <ul id = "snavbar">
   <li><h2 id = "jumptext"><u>Page Contents</u></h2></li>
-    <li id = "snavbarli"><a href="#limits">Derivatives</a></li>
+    <li id = "snavbarli"><a href="#limits">Limits &amp; Continuity</a></li>
   <li id = "snavbarli"><a href="#extrema">Extrema</a></li>
   <li id = "snavbarli"><a href="#optimization">Optimization</a></li>
     </ul>    
@@ -79,19 +79,38 @@
         
             <h2>Finding Limits Graphically &amp; Numerically</h2>
             <h2>Application - Limits</h2>
-        <h4>Limits can be used to determine whether a function has continuity at a point. If a limit fails to exist at point C, C is a <i><b id = "h4bold">point of discontinuity</b></i> and the entire function is considered <i><b id = "h4bold">discontinuous</b></i>. Continuity at a point can be tested for interior points by evaluating the right and left hand limits as x → C. </h4>
+        <h4>Limits can be used to determine whether a function has continuity at a point. If a limit fails to exist at point C, C is a <i><strong>point of discontinuity</strong></i> and the entire function is considered <i><strong>discontinuous</strong></i>. Continuity at a point can be tested for interior points by evaluating the right and left hand limits as x → C. </h4>
     <h3>If the limit fails to exist from either side, or the right and left handed limits are not equal the limit at that point does not exist. </h3>
-    <h4>To find if a function is continuous at endpoints, the right hand limit, x c+(f(x)), must exist for the function to be continuous at a left endpoint. The left hand limit, x c-(f(x)), must exist for the function to be continuous at a right endpoint. A function is continuous if it is continuous at every point in its domain. </h4>
+    <h4>To find if a function is continuous at endpoints, the right hand limit, <img src="images/righthand_limit.png" style="width:20
+        %; height: 50px;">, must exist for the function to be continuous at a left endpoint. The left hand limit, <img src="images/lefthand_limit.png" style="width:20
+        %; height: 50px;">, must exist for the function to be continuous at a right endpoint. A function is continuous if it is <i><strong>continuous</strong></i> at every point in its domain. </h4>
         
-        <h2>Product and Quotient Rule</h2>
-        <A Name="extrema"> 
-        <h4>Some text some text some text some text</h4>         
+    <h3 style="text-align:center;">A discontinous function</h3> <img src="images/dicontin_function.png " class="centerimage"  style="width:60%;">
+    <h3 style="text-align:center;">A continous function</h3> <img src="images/contin_function.png" class="centerimage" style="width: 60%;" >
+    
+        <h2>Average Rates of Change and Secants Lines</h2>
+            
+    
+        <h4>The <strong>average rate of change</strong> of a function over an interval is the amount of change divided by the length of the interval.</h4>  
+    <h4>This “average rate of change” between point ‘a’ and ‘b’ is equivalent to the slope of the <strong>secant line</strong> which passes through points ‘a’ and ‘b’.</h4>  
+    
+    <h4>By combining this concept with limits it is possible to evaluate the <strong>instantaneous rate of change</strong> of a function at a given point.</h4>
+    
+    <h4>To find this make the two points on the secant line P and Q.Make point P the value of x at which you want to determine the instantaneous speed. Then make the second point an arbitrary point ‘Q’ and then find the limiting value of Q as it approaches ‘P’. <br></br>This gives you the instantaneous rate of change at point ‘P’. </h4>  
+    <h4>This instantaneous rate of change is equivalent to the slope of the tangent line that passes through point ‘P’. </h4>
+    
+    <h4> In other words, the slope ‘m’ of the tangent line, at point P(a, f(a)) in function f(x), when x = a, is equal to <br></br><img src="images/deriv_limit.png" class = "centerimage" style="width:35%"> <br></br>as long as the limit exists at this point. </h4>
+    
+<h3>This can be demonstrated in the viewer below. By making the value of ‘H’ (the blue dot) closer to that of ‘A’ (red dot) the variable ‘m’ approaches the slope of the tangent line at x = a (this is the black line when h is infinitely close to A). </h3>
+
+<div id="calculator" style="padding-bottom: 100px;"></div>
+<A Name="extrema"> 
      </div>
     
     <div  id = "mainbodycontent">
         <h1>Extrema</h1>
         <img id="mainbodycontentimg" src="images/extrema.png">
-        <div id="calculator"></div>
+        
         <h2>Finding Extrema</h2>
         <h3>Finding Critical Points</h3>
         <h4>Some text some text some text some text</h4>
