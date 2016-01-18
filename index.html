@@ -31,8 +31,8 @@
 <ul id = "snavbar">
   <li><h2 id = "jumptext"><u>Page Contents</u></h2></li>
     <li id = "snavbarli"><a href="#limits">Limits &amp; Continuity</a></li>
-  <li id = "snavbarli"><a href="#extrema">Extrema</a></li>
-  <li id = "snavbarli"><a href="#optimization">Optimization</a></li>
+  <li id = "snavbarli"><a href="#derivatives">Derivatives</a></li>
+  <li id = "snavbarli"><a href="#findingderivatives">Finding Derivatives</a></li>
     </ul>    
     
     <!--<div>
@@ -78,7 +78,8 @@
             <img class = "centerimage" src="images/poly_proof.jpg" style = "width: 95%;">
         
             <h2>Finding Limits Graphically &amp; Numerically</h2>
-            <h2>Application - Limits</h2>
+            <h2>Right and Left Hand Limits</h2>
+            <h2>Application - Continuity </h2>
         <h4>Limits can be used to determine whether a function has continuity at a point. If a limit fails to exist at point C, C is a <i><strong>point of discontinuity</strong></i> and the entire function is considered <i><strong>discontinuous</strong></i>. Continuity at a point can be tested for interior points by evaluating the right and left hand limits as x → C. </h4>
     <h3>If the limit fails to exist from either side, or the right and left handed limits are not equal the limit at that point does not exist. </h3>
     <h4>To find if a function is continuous at endpoints, the right hand limit, <img src="images/righthand_limit.png" style="width:20
@@ -103,42 +104,95 @@
     
 <h3>This can be demonstrated in the viewer below. By making the value of ‘H’ (the blue dot) closer to that of ‘A’ (red dot) the variable ‘m’ approaches the slope of the tangent line at x = a (this is the black line when h is infinitely close to A). </h3>
 
-<div id="calculator" style="padding-bottom: 100px;"></div>
-<A Name="extrema"> 
+<div id="calculator1" style="padding-bottom: 100px;"></div>
+ 
+<A Name="derivatives"> 
      </div>
     
     <div  id = "mainbodycontent">
-        <h1>Extrema</h1>
-        <img id="mainbodycontentimg" src="images/extrema.png">
+        <h1>Derivatives</h1>
         
-        <h2>Finding Extrema</h2>
-        <h3>Finding Critical Points</h3>
-        <h4>Some text some text some text some text</h4>
+        <h2>Definition</h2>
+        <h4>The derivative of f, denoted as f’, at 'a' is the instantaneous rate of change (slope of tangent line), of a function 'f' when x = a. For this value to exist the limit must exist at the point ‘a’ and the function must be continuous at that point.</h4>
+        <img src="images/deriv_def.png" class = "centerimage">
+        <h4>This formula allows the derivative (slope of the tangent line) to be found at any continuous point ‘x’ to be found. </h4>
+        <h2>Derivatives &amp; Limits</h2>
+        <h3>Derivatives employ many of the same concepts as limits. </h3>
+        <h4>A function is considered <strong>differentiable</strong> on a closed interval [a,b] if it has a derivative at every interior point. Additionally the limits at the endpoints must exist. To test if the limit exists at a right enpoint, 'b', take the righthand limit at that point.</h4>
+        <img src="images/right_endpoint.png" class = "centerimage">
+        <h4>To test if the limit exists at a left endpoint, 'a' take the lefthand limit at that point.</h4>
+         <img src="images/left_endpoint.png" class = "centerimage">
+        <h4>As derivatives are limits, for a derivative to exist at a point the limit must exist, which requires the right and left hand derivatives match at the given point.  </h4>
+        <img src="images/equal_deriv_limit.png" class = "centerimage">
+        <h4> As a result, if a derivative exists a point  x = a then the function is continuous at the point x = a. However the converse of this statement is not always true. For example the function |x| is continuous but not differentiable at x = 0.</h4>
         
-        <h2>Domain and Endpoints</h2>
-        <h4>Some text some text some text some text</h4>
+        <h2>Derivatives Failing to Exist</h2>
+        <h3>Corners</h3>
+        <h4>In this case the one sided derivatives, or derivatives from the right and left hand side, will differ. These mainly can occur in absolute value functions and piecewise functions such as f(x) = |X| or in other cases such as sqrt (x<sup>2</sup>).</h4>
+        <img src="images/corner.png" class = "centerimage" style="width: 55%;">
         
-        <h2>Second Derivative Test</h2>
-        <h4>Some text some text some text some text</h4>
+        <h3>Cusps</h3>
+        <h4>The slopes of the secant lines approach infinity from one side and negative infinity from the other. Example 5(x)<sup>(2/3)</sup>.</h4>
+        <img src="images/cusp.png" class = "centerimage" style="width: 55%;">
         
-        <h2>Concavity</h2>
-        <A Name="optimization">
+        <h3>Vertical Tangents</h3>
+        <h4>The slopes of the secant lines approach negative or positive infinity from both sides. </h4>
+        <img src="images/vertical_tangent.png" class = "centerimage" style="width: 55%;">
+        
+        <h3>A discontinuity</h3>
+        <h4>One or both of the one sided derivatives will fail to exist. Example: floor(x) whenever x = an integer. </h4>
+        <img src="images/floor.png" class = "centerimage" style="width: 55%;">
+        
+        
+        
+        <h2>Local Linearity</h2>
+        <h4> If a function is differentiable at a point, the graph at that point will appear “locally linear”. A function has local linearity at a point, if when you zoom in on a graph the function appears to become a linear line.</h4>
+        <h4>In a differentiable function like x<sup>2</sup> this occurs at every point. In non-differentiable functions such as |x|, the graph does not have local linearity at x = 0. </h4>
+        <h4> You can see this in the graph below. As you zoom in towards the origin |x| never becomes locally linear but x<sup>2</sup> does.</h4>
+        <div id="calculator2" style="padding-bottom: 20px;"></div>
+        
+        
+        <h2>Intermediate Value Theorem for Derivatives</h2>
+        <h4>If a function f(x) is differentiable on the interval [a,b], then f’ takes on every value between f’(a) and f’(b). This builds upon the more basic intermediate theorem which states: a function that is continuous on the interval [a,b] takes on every value between f(a) and f(b).</h4>
+        <h2>Conclusion</h2>
+        <A Name="findingderivatives">
         <h4>Some text some text some text some text</h4>     
     </div>
     
      <div  id = "mainbodycontent">
-        <h1>Optimization</h1>
+        <h1>Finding Derivatives</h1>
         
-        <h2>Creatiing Equation</h2>
-        <h3>Finding Critical Points</h3>
-        <h4>Some text some text some text some text</h4>
+        <h2>Properties</h2>
+         <h4>Derivatives, similar to limits have a series of properties and rules that can be used to break down the function and determine its derivative.</h4>
         
-        <h2>Example</h2>
-        <h4>Some text some text some text some text</h4>
+         <h3>Constant Functions</h3>
+        <h4>The derivative, f’(x),  of a constant function such as f(x) = 5 is always zero.</h4>
+         <h3>Power Rule</h3>
+        <h4>If n is any integer, either positive or negative, then the derivative of x<sup>n</sup> = nx<sup>n-1</sup></h4>
         
-        <h2>Second Derivative Test</h2>
-        <h4>Some text some text some text some text</h4>
+        <h3>Constant Multiple Rule</h3>
+        <h4>The derivative of (c * u) = (c * u’). This means the derivative of any variable with a coefficent is simply the value of the coefficent.</h4>
+         
+         <h3>Sum and Difference rule</h3>
+        <h4>If u and v are both differentiable functions of x, the and they are added or subtracted the derivative will be equivalent to the sum or difference of the individual derivatives. </h4>
+         <img src="images/sum_diff_rule.png" class = "centerimage" style="width: 45%;">
         
+        <h2>Multiplying differentiable functions (Product Rule)</h2>
+         <img src="images/product_rule_der.png" class = "centerimage" style="width: 45%;">
+        <h4>This means if two differentiable functions are multiplied the resulting derivative will be equivalent to the derivative of v multiplied by u, plus the derivative of u multiplied by v. </h4>
+         
+         <h3 style="text-align:center;">Proof of Product Rule</h3>
+         <img src="images/product_proof.png" class = "centerimage" style="width: 85%;">
+        <h4>When solving for these equations it is helpful to break down the equation and determine the values of u, u’, v and v’.</h4>
+         
+         <h2>Dividing Differentiable functions (Quotient Rule)</h2>
+         <img src="images/quotient_rule_der.png" class = "centerimage" style="width: 45%;">
+        <h4>This means if the differentiable function u is divided by the differentiable function v at any point where v &ne; 0, the derivative is equivalent to: ((the derivative of u multiplied by v) minus (the derivative of v multiplied by u)) all divided by v<sup>2</sup> </h4>
+         
+
+        <h4>As with the product rule it is useful to identify and find the values of u, u’, v, and v’.</h4>
+         
+         
         <h2>Concavity</h2>
         <h4>Some text some text some text some text</h4>
     </div>
@@ -158,15 +212,20 @@
         <script>
   
             //desmos calc
-            var elt = document.getElementById('calculator');
-  var calculator = Desmos.Calculator(elt);
- calculator.setExpressions([{id:'graph1', latex:'f(x) =x^2'}, 
+            var elt1 = document.getElementById('calculator1');
+  var calculator1 = Desmos.Calculator(elt1);
+ calculator1.setExpressions([{id:'graph1', latex:'f(x) =x^2'}, 
                             {id:'a-slider', latex:'a=1'},
                            {id:'h-slider', latex:'h = 1.5'},
                            {id:'graph4', latex:'m = (f(a+h)-f(a))/h'},
                            {id:'graph5', latex:'y = m(x-a) + f(a)'},
                            {id:'point1', latex:'(a,f(a))'},
                            {id:'point2', latex:'(a+h,f(a+h))'}]);
+            
+           var elt2 = document.getElementById('calculator2');
+  var calculator2 = Desmos.Calculator(elt2);
+ calculator2.setExpressions([{id:'graph1', latex:'y =x^2'}, 
+                            {id:'graph2', latex:'y = abs(x)'}]);
             
          ///////////   
      $(document).ready(function(){

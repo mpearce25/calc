@@ -163,7 +163,13 @@ h5{
     display: block;
 }
 
-#calculator{
+#calculator1{
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    height: 500px;
+}
+#calculator2{
     margin-right: auto;
     margin-left: auto;
     width: 90%;
