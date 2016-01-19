@@ -104,12 +104,24 @@ li a:hover:not(.active) {
     margin-top:2%;
     margin-bottom: 2%;
     margin-right: 10%;
-    background-color: rgb(250,250,250);
+    background-color: rgb(255,255,255);
     border-radius:  140px 45px;
     border: 1.5px solid #314861
 }
 
-
+strong{
+    font-size: 19px;
+    font-weight: 900;
+}
+figcaption{
+    margin-left: 15%;
+    margin-right: auto;
+    display: block;
+}
+hr{
+    width: 75%;
+    color: black;
+}
 h4{
     margin-left: 10%;
     margin-right: 10%;
@@ -138,16 +150,26 @@ h3{
     font-family: 'Roboto', sans-serif;
 
 }
+h5{
+    
+}
 #mainbodycontentimg{
-
-    width: 85%;
+    margin-left: auto;
     margin-right: auto;
-    margin-left: 7.5%;
-    margin-top: 5%;
-    margin-bottom: 55px;
+}
+.centerimage{
+    margin-left: auto;
+    margin-right:auto;
+    display: block;
 }
 
-#calculator{
+#calculator1{
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    height: 500px;
+}
+#calculator2{
     margin-right: auto;
     margin-left: auto;
     width: 90%;
