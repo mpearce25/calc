@@ -168,7 +168,7 @@
          <h3>Constant Functions</h3>
         <h4>The derivative, f’(x),  of a constant function such as f(x) = 5 is always zero.</h4>
          <h3>Power Rule</h3>
-        <h4>If n is any integer, either positive or negative, then the derivative of x<sup>n</sup> = nx<sup>n-1</sup></h4>
+        <h4>If n is any rational number, either positive or negative, then the derivative of x<sup>n</sup> = nx<sup>n-1</sup></h4>
         
         <h3>Constant Multiple Rule</h3>
         <h4>The derivative of (c * u) = (c * u’). This means the derivative of any variable with a coefficent is simply the value of the coefficent.</h4>
@@ -274,11 +274,54 @@
 
 <div  id = "mainbodycontent">
         <h1>Implicit Differentiation</h1>
-     
+    <h2>Background</h2>
+    <h4>The chain rule is critical when solving implicitly defined functions. 
+</h4>
+    <h4>Implicit differentiation allows the derivative (slope of tangent line) to be found in functions where the x and y variables are mixed together and the previous methods for finding derivatives do not work. </h4>
+    <h4>The key is to treat the variable y as a differentiable function of x and then differentiate both sides of the equation <strong>with respect to x</strong>. This means 3y = 2xy is now really as 3y(x) = 2(x)(y(x)), and that y’ = (dy/dx). </h4>
+    <h4>This is useful for various real life situations in addition to finding the instantaneous rate of change on shapes such as a circle whose formula is x<sup>2</sup> + y<sup>2</sup> = 25 .</h4>
+    
+    <h3> Implicit Differentiation Process</h3> 
+    <h4>First: Differentiate both sides of the equation with respect to x.</h4>
+    <h4>Second: Gather all the terms with (dy/dx)onto one side of the equation</h4>
+    <h4>Third: Factor out (dy/dx)</h4>
+    <h4>Fourth: Isolate / Solve For (dy/dx)</h4>
+    
+<h2>Applications</h2>
+     <h4>Implicit differentiation is especially useful when finding equations of lines that are tangent to a point, specifically in curves and ellipses. </h4>
+    <p>example</p>
 </div>
 
 
+<div  id = "mainbodycontent">
+        <h1>Basic Applications of Derivatives</h1>
+    <h2>Position, Velocity, and Acceleration</h2>
+    <h4>Derivatives can be used in the real world to find the position, velocity, and acceleration of objects at any given time. Whenever taking the derivative in these situations it is key to take them with respect to time. Those variables are related in the following ways.</h4>
+    <h3>(Instantaneous) Velocity</h3>
+    <h4>(Instantaneous) Velocity is the derivative of the position function s = f(t)  with respect to t. </h4>
+    <img src="images/velocity.png" class="centerimage">
+    <h4>This is because velocity is the change in position over a certain time, resultingly when taking the derivative of the position function you get the instantaneous velocity (change in position) at time t. </h4>
+        
+        <h3>Speed</h3>
+        <h4>Speed and velocity while closely related are not the same. Velocity is a vector, while speed is a magnitude. This means that Velocity has a direction (usually indicated by  a + or - sign for basic equations) while speed is only a value. Therefore speed since it is always positive is the absolute value of velocity. 
+</h4>
+        <img src="images/speed.png" class="centerimage">
+    
+    <h3>Acceleration</h3>
+        <h4>Acceleration is the derivative of the velocity function v(t) and the second derivative of the position function with respect to t. 
+</h4>
+        <img src="images/acceleration.png" class="centerimage">
+    <h4>This is because acceleration is instantaneous rate of change in velocity. </h4>
+    
+    <h3>Uses of higher order derivatives</h3>
+    <h4>By taking higher order derivatives you can continue to find the instantaneous rates of change of objects. The derivative of acceleration yields the <strong>jerk</strong> of an object. Beyond that the derivatives are referred to as: snap, crackle, and pop.</h4>
+    
+    
+    <h2>Application to Particle Motion</h2>
+    <h3>Analytical</h3>
+    <h3>Graphical</h3>
 
+</div>
 
 
 
