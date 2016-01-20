@@ -124,13 +124,13 @@
     
     <h3>Horizontal Asymptotes</h3>
     <h4>By evaluating the limit of a function as the x value approaches 土infinity you are able to find the horizontal asymptote of a function. This is true as long as the value the function approaches is a rational number. It is also important to keep in mind that a function can have multiple horizontal asymptotes as it does not have to approach the same value when going to + infinity and - infinity. </h4>
-    <img src="images/horizontal_as.png" class="centerimage"  style="width:60%;">
+    <img src="images/horizontal_as.png" class="centerimage"  style="width:40%;">
     <h4>To evaluate limits as x → 土 infinity you can use the same rules used to evaluate limits as x → C, where C is any constant. </h4>
     
     
     <h3>Vertical Asymptotes</h3>
     <h4>A vertical asymptote occurs when the right or left hand limit of a function is 土 infinity as x approaches a certain value. In the example below a vertical asymptote occurs at x = 0.</h4>
-    <img src="images/vertical_as.png" class="centerimage"  style="width:60%;">
+    <img src="images/vertical_as.png" class="centerimage"  style="width:40%;">
     
     
     
@@ -141,8 +141,8 @@
         %; height: 50px;">, must exist for the function to be continuous at a right endpoint. The left hand limit, <img src="images/lefthand_limit_end.png" style="width:20
         %; height: 50px;">, must exist for the function to be continuous at a left endpoint. A function is continuous if it is <i><strong>continuous</strong></i> at every point in its domain. </h4>
         
-    <h3 style="text-align:center;">A discontinous function</h3> <img src="images/dicontin_function.png " class="centerimage"  style="width:60%;">
-    <h3 style="text-align:center;">A continous function</h3> <img src="images/contin_function.png" class="centerimage" style="width: 60%;" >
+    <h3 style="text-align:center;">A discontinous function</h3> <img src="images/dicontin_function.png " class="centerimage"  style="width:40%;">
+    <h3 style="text-align:center;">A continous function</h3> <img src="images/contin_function.png" class="centerimage" style="width: 40%;" >
     
         <h2>Average Rates of Change and Secants Lines</h2>
             
@@ -184,19 +184,19 @@
         <h2>Derivatives Failing to Exist</h2>
         <h3>Corners</h3>
         <h4>In this case the one sided derivatives, or derivatives from the right and left hand side, will differ. These mainly can occur in absolute value functions and piecewise functions such as f(x) = |X| or in other cases such as sqrt (x<sup>2</sup>).</h4>
-        <img src="images/corner.png" class = "centerimage" style="width: 55%;">
+        <img src="images/corner.png" class = "centerimage" style="width: 40%;">
         
         <h3>Cusps</h3>
         <h4>The slopes of the secant lines approach infinity from one side and negative infinity from the other. Example 5(x)<sup>(2/3)</sup>.</h4>
-        <img src="images/cusp.png" class = "centerimage" style="width: 55%;">
+        <img src="images/cusp.png" class = "centerimage" style="width: 40%;">
         
         <h3>Vertical Tangents</h3>
         <h4>The slopes of the secant lines approach negative or positive infinity from both sides. </h4>
-        <img src="images/vertical_tangent.png" class = "centerimage" style="width: 55%;">
+        <img src="images/vertical_tangent.png" class = "centerimage" style="width: 40%;">
         
         <h3>A discontinuity</h3>
         <h4>One or both of the one sided derivatives will fail to exist. Example: floor(x) whenever x = an integer. </h4>
-        <img src="images/floor.png" class = "centerimage" style="width: 55%;">
+        <img src="images/floor.png" class = "centerimage" style="width: 40%;">
         
         
         
@@ -365,12 +365,12 @@
 <h3>Tangent Lines</h3>
 <h4>To find the equation of a line tangent to a graph at a the value x = a and f(a) = k one should start with the point slope form of a linear line which is (y-k) = m(x - a).</h4>
 <h4>Then you can take the derivative at x = a and also evaluate the function at x = a to find the value of k. Then by plugging in those values you get the equation of the line tangent to (a,k).</h4>
-<img src="images/tangent_graph.png" class="centerimage"  style="width:60%;">
+<img src="images/tangent_graph.png" class="centerimage"  style="width:40%;">
 
 <h3>Normal Lines</h3>
 <h4>A line normal to any function is the line that intersects the function’s graph at a right angle (perpendicular). Therefore it is known that the slope of a normal line is the opposite reciprocal of the first line. This makes the equation for the line normal to a function at (a,k).</h4>
 <h4 style="text-align:center;">(y-k) = -(1/)m(x - a).</h4>
-<img src="images/normal_graph.png" class="centerimage"  style="width:60%;">
+<img src="images/normal_graph.png" class="centerimage"  style="width:40%;">
 <h4>ap problem finding both nromal and tangent line</h4>
 
 
@@ -462,7 +462,60 @@
 <A Name="extrema">
 <div  id = "mainbodycontent">
         <h1>Extrema</h1>
+    <h3>By using the derivative of a function it is possible to find the extreme values of a function.</h3>
+    <h2>Defining Extreme Values</h2>
+    <img src="images/extrema.png" class="centerimage"  style="width:60%;">
+    <h3>Local Minimum</h3>
+    <h4>For interior points, a local minimum occurs at x = c  when f(x) is greater than  f(c) for all values in a given open interval.</h4>
+    <h3>Local Maximum</h3>
+        <h4>For interior points, a local maximum occurs at x = c  when f(x) is less than  f(c) for all values in a given open interval.</h4>
+    <h3>Global (Absolute) Maximum </h3>
+        <h4>A absolute maximum occurs at at x = c when f(c) is greater than all other values f(x) within the functions domain. </h4>
+    <h3>Global (Absolute) Minimum </h3>
+        <h4>A absolute minimum occurs at at x = c when f(c) is less than all other values f(x) within the functions domain. </h4>
+    
+    <h2>Finding Extrema With Derivatives</h2>
+    <h4>A function on a closed interval has local extrema at its endpoints and it potentially has local extrema at critical points. </h4>
+    <h3>Endpoints</h3>
+    <h4>According to the <strong>extreme value theorem</strong> on a closed interval [a,b], a function will have local extrema at both of its endpoints. </h4>
+    <h4>If a function only has a closed interval on one side then only that endpoint will be an extreme value. It is also possible for a function to have no endpoints such as a function defined on the interval (a,b).</h4>
+    
+    <h3>Critical Points</h3>
+    <h4>A critical point is defined as a point where the derivative of a function either equals 0 or fails to exist. </h4>
+    <h3>Finding Critical Points</h3>
+    <h4>To find a critical point take the derivative of a function and then find what points make the derivative equal to 0 or make it fail to exist. </h4>
+
+  
+    
+    
+    <h4>To test if a extrema occurs the <strong>first derivative test</strong> is used. </h4>
+    <h2>First Derivative Test</h2>
+    <h4>To test if a extrema occurs at critical points and determine if it is a local max or min the first derivative test is employed.</h4>
+    <h4>The easiest way to organize perform the test is by making a table and labeling the intervals of the function between its critical points. </h4>
+    <h4>For example to find the critical points in the function  5x<sup>3</sup> - 3x that are extrema follow the steps below.</h4>
+    <img src="images/interval_ex.png" class="centerimage"  style="width:80%;">
+    
+    
+    <h4>If the sign of the derivative changes from positive to negative at a critical point that means a local maximum exists at that point. </h4>
+    <img src="images/local_max.png" class="centerimage"  style="width:45%;">
+    <h4>If the sign of the derivative changes from positive to negative at a critical points, the function has a local minimum at that point. </h4>
+    <img src="images/local_min.png" class="centerimage"  style="width:45%;">
+    <h4>If there is no change in sign of the derivative at a critical point it means that an extreme value does not occur at that point. This occurs in graphs such as the below graph of x<sup>3</sup> at x = 0.</h4>
+    <img src="images/x_cube.png" class="centerimage"  style="width:45%;">
+    <span style="padding:  150px;"></span>
+    <h2>Finding Extrema Graphically</h2>
+    
+   
 </div>
+    
+    
+<A Name="optimization">
+<div  id = "mainbodycontent">
+        <h1>Antiderivatives &amp; Mean Value Theorem</h1>
+</div>    
+    
+    
+    
 
 <A Name="optimization">
 <div  id = "mainbodycontent">
