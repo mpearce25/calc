@@ -24,7 +24,6 @@
 <ul id = "tnavbar">
   <li id = "tnavbarli"><a class="active" href="index.html" >Content</a></li>
   <li id = "tnavbarli"><a href="me.html">About Me</a></li>
-  <li id = "tnavbarli"><a href="#other">Other</a></li>
 </ul>
    
     
@@ -33,6 +32,15 @@
     <li id = "snavbarli"><a href="#limits">Limits &amp; Continuity</a></li>
   <li id = "snavbarli"><a href="#derivatives">Derivatives</a></li>
   <li id = "snavbarli"><a href="#findingderivatives">Finding Derivatives</a></li>
+    
+    <li id = "snavbarli"><a href="#implicit">Implicit Differentiation</a></li>
+    <li id = "snavbarli"><a href="#applying">Applying Derivatives
+
+</a></li>
+    <li id = "snavbarli"><a href="#extrema">Extrema</a></li>
+    <li id = "snavbarli"><a href="#optimization">Optimization</a></li>
+    <li id = "snavbarli"><a href="#linear">Linearization &amp; Differentials</a></li>
+    <li id = "snavbarli"><a href="#rr">Related Rates</a></li>
     </ul>    
     
     <!--<div>
@@ -231,6 +239,7 @@
          <h3 style="text-align:center;">Proof of Product Rule</h3>
          <img src="images/product_proof.png" class = "centerimage" style="width: 85%;">
         <h4>When solving for these equations it is helpful to break down the equation and determine the values of u, u’, v and v’.</h4>
+     
          
          <h2>Dividing Differentiable functions (Quotient Rule)</h2>
          <img src="images/quotient_rule_der.png" class = "centerimage" style="width: 45%;">
@@ -356,23 +365,28 @@
 <h3>Tangent Lines</h3>
 <h4>To find the equation of a line tangent to a graph at a the value x = a and f(a) = k one should start with the point slope form of a linear line which is (y-k) = m(x - a).</h4>
 <h4>Then you can take the derivative at x = a and also evaluate the function at x = a to find the value of k. Then by plugging in those values you get the equation of the line tangent to (a,k).</h4>
+<img src="images/tangent_graph.png" class="centerimage"  style="width:60%;">
 
 <h3>Normal Lines</h3>
 <h4>A line normal to any function is the line that intersects the function’s graph at a right angle (perpendicular). Therefore it is known that the slope of a normal line is the opposite reciprocal of the first line. This makes the equation for the line normal to a function at (a,k).</h4>
 <h4 style="text-align:center;">(y-k) = -(1/)m(x - a).</h4>
+<img src="images/normal_graph.png" class="centerimage"  style="width:60%;">
 <h4>ap problem finding both nromal and tangent line</h4>
 
+
 <h2>Other methods of taking derivatives</h2>
-<h3>Graphing</h3>
 <h3>Numerical</h3>
+<h4>It is also possible to evaluate the derivative of a function directly using the nder function on a calculator. This is known as the numerical derivative and allows you to find a derivative at any point or easily graph the derivative of a function. </h4>
+
+<h3>Graphing</h3>
+<h4></h4>
+
+
 <h3>Tables</h3>
-
-
-
-
-
-
-
+<h4>The use of tables to evaluate a derivative returns to the idea of finding the slope of a secant line as one point gets infinitely close to the point where you are evaluating the derivative at. </h4>
+<h4>By finding the numerical values near f(x) on either side of and at  x and then finding the average rate of change between a selection of these points you will get a very close approximation of the derivative. </h4>
+<h4>example AP</h4>
+<A Name="implicit">
 
 </div>
 
@@ -403,6 +417,7 @@
 <h2>Applications</h2>
      <h4>Implicit differentiation is especially useful when finding equations of lines that are tangent to a point, specifically in curves and ellipses. </h4>
     <p>example</p>
+    <A Name="applying">
 </div>
 
 
@@ -414,6 +429,7 @@
     <h4>(Instantaneous) Velocity is the derivative of the position function s = f(t)  with respect to t. </h4>
     <img src="images/velocity.png" class="centerimage">
     <h4>This is because velocity is the change in position over a certain time, resultingly when taking the derivative of the position function you get the instantaneous velocity (change in position) at time t. This is in constratst to the slope of a secant line which would give the average rate of change over a certain period of time.</h4>
+     <h4>This also means that if position is increasing at a constant rate then acceleration will be constant, and if the position is constant that acceleration = 0.</h4>
         
         <h3>Speed</h3>
         <h4>Speed and velocity while closely related are not the same. Velocity is a vector, while speed is a magnitude. This means that Velocity has a direction (usually indicated by  a + or - sign for basic equations) while speed is only a value. Therefore speed since it is always positive is the absolute value of velocity. 
@@ -425,35 +441,45 @@
 </h4>
         <img src="images/acceleration.png" class="centerimage">
     <h4>This is because acceleration is instantaneous rate of change in velocity. </h4>
+    <h4>This also means that if velocity is increasing at a constant rate then acceleration will be constant, and if instantaneous velocity is constant that acceleration = 0.</h4>
     
     <h3>Uses of higher order derivatives</h3>
     <h4>By taking higher order derivatives you can continue to find the instantaneous rates of change of objects. The derivative of acceleration yields the <strong>jerk</strong> of an object. Beyond that the derivatives are referred to as: snap, crackle, and pop.</h4>
     
     
     <h2>Application to Particle Motion</h2>
-    <h3>Analytical</h3>
+    
     <h3>Graphical</h3>
+    <h4>Using the concepts behind the above analytical methods allows you to view a velocity time or position time graph and determine when a particle is: slowing down, speeding up, accelerating, decelerating, and much more. </h4>
+    
+    <h4>put AP example here</h4>
+    
+    <h4>For example you can see on the graph above that the particle is.... during the interval of time...</h4>
+    
 
 </div>
 
-
-
-
-
-
-
-
-
+<A Name="extrema">
+<div  id = "mainbodycontent">
+        <h1>Extrema</h1>
 </div>
 
+<A Name="optimization">
+<div  id = "mainbodycontent">
+        <h1>Optimization</h1>
+</div>
 
+<A Name="linear">
+<div  id = "mainbodycontent">
+        <h1>Linearization &amp; Differentials</h1>
+</div>
 
+<A Name="rr">
+<div  id = "mainbodycontent">
+        <h1>Related Rates</h1>
+</div>
 
-
-
-
-
-
+</div>
 
 
 
