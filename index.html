@@ -24,7 +24,6 @@
 <ul id = "tnavbar">
   <li id = "tnavbarli"><a class="active" href="index.html" >Content</a></li>
   <li id = "tnavbarli"><a href="me.html">About Me</a></li>
-  <li id = "tnavbarli"><a href="#other">Other</a></li>
 </ul>
    
     
@@ -33,6 +32,15 @@
     <li id = "snavbarli"><a href="#limits">Limits &amp; Continuity</a></li>
   <li id = "snavbarli"><a href="#derivatives">Derivatives</a></li>
   <li id = "snavbarli"><a href="#findingderivatives">Finding Derivatives</a></li>
+    
+    <li id = "snavbarli"><a href="#implicit">Implicit Differentiation</a></li>
+    <li id = "snavbarli"><a href="#applying">Applying Derivatives
+
+</a></li>
+    <li id = "snavbarli"><a href="#extrema">Extrema</a></li>
+    <li id = "snavbarli"><a href="#optimization">Optimization</a></li>
+    <li id = "snavbarli"><a href="#linear">Linearization &amp; Differentials</a></li>
+    <li id = "snavbarli"><a href="#rr">Related Rates</a></li>
     </ul>    
     
     <!--<div>
@@ -57,20 +65,31 @@
         <h4>These rules allow you to analytically determine the limits of both polynomial and rational functions. By determining the limits of individual parts of a function and then applying these rules, the limit of complicated functions can be found.
 </h4>
             <h3>Given &nbsp;<img src="images/limit_prop.png"></h3>
+            
+            <hr></hr>
             <h3>Sum Rule</h3>
             <img class = "centerimage" src="images/sum_rule.png">
+            <h4>To find the limit of a two functions that are being added together simply find the sum of the limits of the individual functions. </h4>
             <hr></hr>
-            <h3>Difference Rule</h3>
+            
+    <h3>Difference Rule</h3>
             <img class = "centerimage" src="images/diff_rule.png">
-            <hr></hr>
-            <h3>Product Rule</h3>
+    <h4>Similar to the sum rule, to find the limit of two functions that are being subtracted, you can just take the difference of the individual limits.</h4>
+    <hr></hr>
+           
+    <h3>Product Rule</h3>
             <img class = "centerimage" src="images/product_rule.png">
+    <h4>To find the limit of two functions being multiplied, you can just multiply the limits of the individual functions.</h4>
             <hr></hr>
-            <h3>Quotient Rule</h3>
+            
+        <h3>Quotient Rule</h3>
             <img class = "centerimage" src="images/quotient_rule.png">
+        <h4>To find the limit of two functions being divided, you simply divide the limits of the individual functions. As long as the limit of the denominator does &ne; 0.</h4>
             <hr></hr>
-            <h3>Power Rule</h3>
+            
+        <h3>Power Rule</h3>
             <img class = "centerimage" src="images/power_rule.png">
+        <h4>To find the limit of a function being raised to a rational exponent, raise the limit of the original function raised to the same rational exponent.</h4>
             <hr></hr>
             <h3>Polynomial Rule</h3>
             <img class = "centerimage" src="images/poly_rule.png">
@@ -78,16 +97,52 @@
             <img class = "centerimage" src="images/poly_proof.jpg" style = "width: 95%;">
         
             <h2>Finding Limits Graphically &amp; Numerically</h2>
+    
+    <h3>Numerically</h3>
+    <h4>By making a table of the x and f(x) values extremely close to the point x approaches you are able to determine the limit. This also particularly useful for finding the limit even when the function is not defined at the point, because you still see the value that f(x) approaches as x→ a. To ensure precision you should use at a minimum x values within .01 of the value x approaches. </h4>
+    <h4>For example in this AP problem from the Grey &amp; Maroon review book the value of the limit can be found using the following table. </h4>
+     <h4>give example AP problem</h4>
+    
+    
+    <h3>Graphically</h3>
+    <h4>To find the limit graphically you can can graph the function you are trying to find the limit of and then simply by looking at the graph see the value f(x) approaches. If it is difficult to determine the exact value f(x) approaches you can use your calculators tool to find f(x) at any x value. </h4>
+    <h4>give example AP problem</h4>
+    
             <h2>Right and Left Hand Limits</h2>
+    <h4>The limit of a function can be broken up into both a <strong>right hand</strong> and <strong>left hand limit</strong>. The process for finding these limits is basically the same as finding general limits; however, a function such can approach a different value from the right and left and sides. This is a key concept when evaluating continuity at a point. In the discontinuous function below you can see how from the right hand side the function approaches on value and from the left hand side it approaches another value. </h4>
+    <h4>insert picutre</h4>
+    <h4>The notation for the right and left hand limits approaching the value 'C' is as follows. </h4>
+    <h4 style="text-align:center">Right Hand Limit</h4>
+    <img src="images/righthand_limit.png" class = "centerimage" style="width:20
+        %; height: 50px;">
+    
+    <h4 style="text-align:center" >Left Hand Limit</h4>
+    <img src="images/lefthand_limit.png" class = "centerimage" style="width:20
+        %; height: 50px;">
+    
+    <h2>Asymptotes </h2>
+    
+    <h3>Horizontal Asymptotes</h3>
+    <h4>By evaluating the limit of a function as the x value approaches 土infinity you are able to find the horizontal asymptote of a function. This is true as long as the value the function approaches is a rational number. It is also important to keep in mind that a function can have multiple horizontal asymptotes as it does not have to approach the same value when going to + infinity and - infinity. </h4>
+    <img src="images/horizontal_as.png" class="centerimage"  style="width:40%;">
+    <h4>To evaluate limits as x → 土 infinity you can use the same rules used to evaluate limits as x → C, where C is any constant. </h4>
+    
+    
+    <h3>Vertical Asymptotes</h3>
+    <h4>A vertical asymptote occurs when the right or left hand limit of a function is 土 infinity as x approaches a certain value. In the example below a vertical asymptote occurs at x = 0.</h4>
+    <img src="images/vertical_as.png" class="centerimage"  style="width:40%;">
+    
+    
+    
             <h2>Application - Continuity </h2>
         <h4>Limits can be used to determine whether a function has continuity at a point. If a limit fails to exist at point C, C is a <i><strong>point of discontinuity</strong></i> and the entire function is considered <i><strong>discontinuous</strong></i>. Continuity at a point can be tested for interior points by evaluating the right and left hand limits as x → C. </h4>
     <h3>If the limit fails to exist from either side, or the right and left handed limits are not equal the limit at that point does not exist. </h3>
-    <h4>To find if a function is continuous at endpoints, the right hand limit, <img src="images/righthand_limit.png" style="width:20
-        %; height: 50px;">, must exist for the function to be continuous at a left endpoint. The left hand limit, <img src="images/lefthand_limit.png" style="width:20
-        %; height: 50px;">, must exist for the function to be continuous at a right endpoint. A function is continuous if it is <i><strong>continuous</strong></i> at every point in its domain. </h4>
+    <h4>To find if a function with the domain [a,b] is continuous at endpoints, the right hand limit, <img src="images/righthand_limit_end.png" style="width:20
+        %; height: 50px;">, must exist for the function to be continuous at a right endpoint. The left hand limit, <img src="images/lefthand_limit_end.png" style="width:20
+        %; height: 50px;">, must exist for the function to be continuous at a left endpoint. A function is continuous if it is <i><strong>continuous</strong></i> at every point in its domain. </h4>
         
-    <h3 style="text-align:center;">A discontinous function</h3> <img src="images/dicontin_function.png " class="centerimage"  style="width:60%;">
-    <h3 style="text-align:center;">A continous function</h3> <img src="images/contin_function.png" class="centerimage" style="width: 60%;" >
+    <h3 style="text-align:center;">A discontinous function</h3> <img src="images/dicontin_function.png " class="centerimage"  style="width:40%;">
+    <h3 style="text-align:center;">A continous function</h3> <img src="images/contin_function.png" class="centerimage" style="width: 40%;" >
     
         <h2>Average Rates of Change and Secants Lines</h2>
             
@@ -129,19 +184,19 @@
         <h2>Derivatives Failing to Exist</h2>
         <h3>Corners</h3>
         <h4>In this case the one sided derivatives, or derivatives from the right and left hand side, will differ. These mainly can occur in absolute value functions and piecewise functions such as f(x) = |X| or in other cases such as sqrt (x<sup>2</sup>).</h4>
-        <img src="images/corner.png" class = "centerimage" style="width: 55%;">
+        <img src="images/corner.png" class = "centerimage" style="width: 40%;">
         
         <h3>Cusps</h3>
         <h4>The slopes of the secant lines approach infinity from one side and negative infinity from the other. Example 5(x)<sup>(2/3)</sup>.</h4>
-        <img src="images/cusp.png" class = "centerimage" style="width: 55%;">
+        <img src="images/cusp.png" class = "centerimage" style="width: 40%;">
         
         <h3>Vertical Tangents</h3>
         <h4>The slopes of the secant lines approach negative or positive infinity from both sides. </h4>
-        <img src="images/vertical_tangent.png" class = "centerimage" style="width: 55%;">
+        <img src="images/vertical_tangent.png" class = "centerimage" style="width: 40%;">
         
         <h3>A discontinuity</h3>
         <h4>One or both of the one sided derivatives will fail to exist. Example: floor(x) whenever x = an integer. </h4>
-        <img src="images/floor.png" class = "centerimage" style="width: 55%;">
+        <img src="images/floor.png" class = "centerimage" style="width: 40%;">
         
         
         
@@ -184,6 +239,7 @@
          <h3 style="text-align:center;">Proof of Product Rule</h3>
          <img src="images/product_proof.png" class = "centerimage" style="width: 85%;">
         <h4>When solving for these equations it is helpful to break down the equation and determine the values of u, u’, v and v’.</h4>
+     
          
          <h2>Dividing Differentiable functions (Quotient Rule)</h2>
          <img src="images/quotient_rule_der.png" class = "centerimage" style="width: 45%;">
@@ -199,6 +255,8 @@
 </h2>
         <h4>These same rules can be applied to find the second and higher order derivatives of a function. The notation for finding the second and third derivatives is y’’ and y’’’ respectively.  For any higher order derivative it is simply denoted by y<sup>(n)</sup>.</h4>
          <h4>To find a higher order derivative you simply take the derivative of the first function and then to find a second derivative take the derivative of the first derivative. Continue this process as many times as necessary.</h4>
+         
+         <h4>Example problems (combining multiple rules)</h4>
     
         
         <h2>Derivatives of Basic Trig Functions</h2>
@@ -275,9 +333,11 @@
              </tr>
          </table>
         
-        
+<h3>Finding Inverse Derivatives</h3>    
+<h4>Algebra concepts show that an inverse of a function can be obtained by reflecting the graph over the line y = x. This holds true for the inverse of tangent lines, by reflecting the line tangent to (a, f(a)) over the line y = x it becomes tangent to the graph of f<sup>-1</sup> at (f(a), a). Furthermore the slope of the line tangent to the inverse function will have a slope that is the reciprocal of the original slope (provided the slope is not 0).</h4>
+
         <h2> Chain Rule</h2>
-        <h4>The chain rule is key for evaluating the derivatives of composite functions. While not always visible the chain rule is used whenever evaluating the derivative of any function. </h4>
+        <h4>The chain rule is key for evaluating the derivatives of composite functions. While not always visible the chain rule is used whenever evaluating the derivative of any function.</h4>
         
 <h3>Definition</h3>
 <h4>The chain rule states that if the function f is differentiable at g(x) and the function g is differentiable at x, then f(g(x)) is differentiable at x. <br></br>Additionally it states that: the derivative of f(g(x)) is equivalent to the derivative of the outside function, f’ ,at the value of the inside function g(x), multiplied by the derivative of the inside g’. </h4>
@@ -285,17 +345,48 @@
         
 
 <h2>Exponential and Log Functions </h2>
+<h4>Functions involving e<sup>x</sup> and and the ln(x) are very important to modeling exponential growth functions. By learning how to take the derivative of these functions you can easily determine the instantaneous rate of change of these functions at any moment. </h4>
+<h4>Exponential and log functions rely heavily upon the chain rule so it is important to always remember to use it, it may potentially be used multiple times. </h4>
+
+<h3>Derivative of e<sup>x</sup> &amp; e<sup>u</sup></h3>
+<h4>While the derivative of e<sup>x</sup> is simply itself, when you take the derivative of e<sup>u</sup>.</h4>
+<img src="images/ex_deriv.png" class = "centerimage" style="width: 45%;">
+<h4>This states that the derivative of e<sup>u</sup> is the original function multiplied by the derivative of the exponent.</h4>
+<h4>Example AP problem</h4>
+
+<h3>Derivative of ln(u)</h3>
+<img src="images/ln(u)_deriv.png" class = "centerimage" style="width: 45%;">
+<h4>The derivative of ln(u) is simple the derivative of the inside (du/dx) divided by the inside (u).</h4>
+
+
+
+
+<h2>Finding Tangent and Normal Lines </h2>
+<h3>Tangent Lines</h3>
+<h4>To find the equation of a line tangent to a graph at a the value x = a and f(a) = k one should start with the point slope form of a linear line which is (y-k) = m(x - a).</h4>
+<h4>Then you can take the derivative at x = a and also evaluate the function at x = a to find the value of k. Then by plugging in those values you get the equation of the line tangent to (a,k).</h4>
+<img src="images/tangent_graph.png" class="centerimage"  style="width:40%;">
+
+<h3>Normal Lines</h3>
+<h4>A line normal to any function is the line that intersects the function’s graph at a right angle (perpendicular). Therefore it is known that the slope of a normal line is the opposite reciprocal of the first line. This makes the equation for the line normal to a function at (a,k).</h4>
+<h4 style="text-align:center;">(y-k) = -(1/)m(x - a).</h4>
+<img src="images/normal_graph.png" class="centerimage"  style="width:40%;">
+<h4>ap problem finding both nromal and tangent line</h4>
+
+
 <h2>Other methods of taking derivatives</h2>
-<h3>Graphing</h3>
 <h3>Numerical</h3>
+<h4>It is also possible to evaluate the derivative of a function directly using the nder function on a calculator. This is known as the numerical derivative and allows you to find a derivative at any point or easily graph the derivative of a function. </h4>
+
+<h3>Graphing</h3>
+<h4></h4>
+
+
 <h3>Tables</h3>
-
-
-
-
-
-
-
+<h4>The use of tables to evaluate a derivative returns to the idea of finding the slope of a secant line as one point gets infinitely close to the point where you are evaluating the derivative at. </h4>
+<h4>By finding the numerical values near f(x) on either side of and at  x and then finding the average rate of change between a selection of these points you will get a very close approximation of the derivative. </h4>
+<h4>example AP</h4>
+<A Name="implicit">
 
 </div>
 
@@ -321,10 +412,12 @@
     <h4>Second: Gather all the terms with (dy/dx)onto one side of the equation</h4>
     <h4>Third: Factor out (dy/dx)</h4>
     <h4>Fourth: Isolate / Solve For (dy/dx)</h4>
+    <h3>This process is illustrated in the following AP problem from the Grey &amp; Maroon Prep book.</h3>
     
 <h2>Applications</h2>
      <h4>Implicit differentiation is especially useful when finding equations of lines that are tangent to a point, specifically in curves and ellipses. </h4>
     <p>example</p>
+    <A Name="applying">
 </div>
 
 
@@ -336,6 +429,7 @@
     <h4>(Instantaneous) Velocity is the derivative of the position function s = f(t)  with respect to t. </h4>
     <img src="images/velocity.png" class="centerimage">
     <h4>This is because velocity is the change in position over a certain time, resultingly when taking the derivative of the position function you get the instantaneous velocity (change in position) at time t. This is in constratst to the slope of a secant line which would give the average rate of change over a certain period of time.</h4>
+     <h4>This also means that if position is increasing at a constant rate then acceleration will be constant, and if the position is constant that acceleration = 0.</h4>
         
         <h3>Speed</h3>
         <h4>Speed and velocity while closely related are not the same. Velocity is a vector, while speed is a magnitude. This means that Velocity has a direction (usually indicated by  a + or - sign for basic equations) while speed is only a value. Therefore speed since it is always positive is the absolute value of velocity. 
@@ -347,35 +441,138 @@
 </h4>
         <img src="images/acceleration.png" class="centerimage">
     <h4>This is because acceleration is instantaneous rate of change in velocity. </h4>
+    <h4>This also means that if velocity is increasing at a constant rate then acceleration will be constant, and if instantaneous velocity is constant that acceleration = 0.</h4>
     
     <h3>Uses of higher order derivatives</h3>
     <h4>By taking higher order derivatives you can continue to find the instantaneous rates of change of objects. The derivative of acceleration yields the <strong>jerk</strong> of an object. Beyond that the derivatives are referred to as: snap, crackle, and pop.</h4>
     
     
     <h2>Application to Particle Motion</h2>
-    <h3>Analytical</h3>
+    
     <h3>Graphical</h3>
+    <h4>Using the concepts behind the above analytical methods allows you to view a velocity time or position time graph and determine when a particle is: slowing down, speeding up, accelerating, decelerating, and much more. </h4>
+    
+    <h4>put AP example here</h4>
+    
+    <h4>For example you can see on the graph above that the particle is.... during the interval of time...</h4>
+    
 
 </div>
 
+<A Name="extrema">
+<div  id = "mainbodycontent">
+        <h1>Extrema</h1>
+    <h3>By using the derivative of a function it is possible to find the extreme values of a function.</h3>
+    <h2>Defining Extreme Values</h2>
+    <img src="images/extrema.png" class="centerimage"  style="width:60%;">
+    <h3>Local Minimum</h3>
+    <h4>For interior points, a local minimum occurs at x = c  when f(x) is greater than  f(c) for all values in a given open interval.</h4>
+    <h3>Local Maximum</h3>
+        <h4>For interior points, a local maximum occurs at x = c  when f(x) is less than  f(c) for all values in a given open interval.</h4>
+    <h3>Global (Absolute) Maximum </h3>
+        <h4>A absolute maximum occurs at at x = c when f(c) is greater than all other values f(x) within the functions domain. </h4>
+    <h3>Global (Absolute) Minimum </h3>
+        <h4>A absolute minimum occurs at at x = c when f(c) is less than all other values f(x) within the functions domain. </h4>
+    
+    <h2>Finding Extrema With Derivatives</h2>
+    <h4>A function on a closed interval has local extrema at its endpoints and it potentially has local extrema at critical points. </h4>
+    <h3>Endpoints</h3>
+    <h4>According to the <strong>extreme value theorem</strong> on a closed interval [a,b], a function will have local extrema at both of its endpoints. </h4>
+    <h4>If a function only has a closed interval on one side then only that endpoint will be an extreme value. It is also possible for a function to have no endpoints such as a function defined on the interval (a,b).</h4>
+    
+    <h3>Critical Points</h3>
+    <h4>A critical point is defined as a point where the derivative of a function either equals 0 or fails to exist. </h4>
+    <h3>Finding Critical Points</h3>
+    <h4>To find a critical point take the derivative of a function and then find what points make the derivative equal to 0 or make it fail to exist. </h4>
 
+  
+    
+    
+    <h4>To test if a extrema occurs the <strong>first derivative test</strong> is used. </h4>
+    <h2>First Derivative Test</h2>
+    <h4>To test if a extrema occurs at critical points and determine if it is a local max or min the first derivative test is employed.</h4>
+    <h4>The easiest way to organize perform the test is by making a table and labeling the intervals of the function between its critical points. </h4>
+    <h4>For example to find the critical points in the function  5x<sup>3</sup> - 3x that are extrema follow the steps below.</h4>
+    <img src="images/interval_ex.png" class="centerimage"  style="width:80%;">
+    
+    
+    <h4>If the sign of the derivative changes from positive to negative at a critical point that means a local maximum exists at that point. </h4>
+    <img src="images/local_max.png" class="centerimage"  style="width:45%;">
+    <h4>If the sign of the derivative changes from positive to negative at a critical points, the function has a local minimum at that point. </h4>
+    <img src="images/local_min.png" class="centerimage"  style="width:45%;">
+    <h4>If there is no change in sign of the derivative at a critical point it means that an extreme value does not occur at that point. This occurs in graphs such as the below graph of x<sup>3</sup> at x = 0.</h4>
+    <img src="images/x_cube.png" class="centerimage"  style="width:45%;">
+    <span style="padding:  150px;"></span>
+    <h2>Finding Extrema Graphically</h2>
+    <h2>By examining a graph it is possible to easily determine where extrema occur. It is best to confirm the exact x value of the extreme value by using the calculators function to find maximums and minimums. </h2>
+    <img src="images/extreme_function.png" class="centerimage"  style="width:45%;">
+    <h4>In the function above it is clear that a local maximum occurs somewhere around -1/2 and that a min occurs around 1/2. When you confirm using your calculator you find the exact values to be -.447 and .447.</h4>
+    
+    
+    
+    <h2>Second Derivative Test</h2>
+    <h4>Instead of relying on the first derivative test to determine where extreme values occur,in some situations it is possible to directly identify extrema through the second derivative test. </h4>
+    <h3>Concanvity</h3>
+    <h4>Concavity is key to understanding why the second derivative test works. </h4>
+    <h4>Concavity describes whether a function is open up or down. This is best illustrated in the below graph. </h4>
+    
+    <img src="images/first_conc.png" class="centerimage"  style="width:45%;">
+    <h4>When the f’(x) is increasing a function is concave up and when f’(x) is decreasing a function is concave down. However the second derivative of a function conveys the same information by examining whether it is positive or negative.<br></br>A negative second derivative is the same as a decreasing first derivative, which means the function is concave down. A positive second derivative is the same as a increasing first derivative, which means the function is concave up.  </h4>
+    
+    <img src="images/second_conc.png" class="centerimage"  style="width:45%;">
+    
+    <h3>The Test</h3>
+    <h4>If you look at extreme values it is clear that an interior local minimum is concave up while a interior max is concave down. Therefore if f’(c) = 0 and f’’(c) < 0 a local maximum occurs. If f’(c) = 0 and f’’(c) > 0 then a local minimum occurs at x = c. </h4>
+        <h4>By using a similar table to the first derivative test you can analytically find the extrema using. The process is shown below.</h4>
+        <h4>insert AP problem</h4>
+        <h4>However if f’’(c) = 0 or fails to exist no conclusions can be drawn and you must resort to the first derivative test. </h4>
+        
+        <h2>Points of inflection</h2>
+        <h4>A point of inflection is where the concavity of a function changes. To find points of inflection the second derivative test is used. Much in the same way as finding extrema with the first derivative test, you are looking for a change in the sign of f’’(x). This can be especially useful when graphing equations by hand or for further analyzing functions. </h4>
+        <h4>Shown below, the blue dot is located at a point of inflection. </h4>
+        <img src="images/inflection.png" class="centerimage"  style="width:45%;">
+        
+</div>
+    
+    
+<A Name="optimization">
+<div  id = "mainbodycontent">
+        <h1>Antiderivatives &amp; Mean Value Theorem</h1>
+    <h2>Mean Value Theorem</h2>
+    <h4>The mean value theorem states that if f(x) is continuous at every point on the closed interval [a,b] and differentiable at every point of its interior (a,b) then there is at least one point c in (a,b) where<img src="images/mean_value.png"  style="width:35%"></h4> 
+    
+    <h4>In other words this means that the instantaneous rate of change of a function at, at least one point is equivalent to the average rate of change of the function from a to b. </h4>
+    
+    <h2>Antiderivatives</h2>
+    <h4>Employing the concept of the mean value theorem antiderivatives can be found through the process of antidifferentiation. Antidifferentiation employs many of the same rules used to take derivatives but in reverse. </h4>
+    <h4>For example we know that f’(x) of a constant function is 0. Applying that in reverse, the antiderivative of a zero function must be a constant function.</h4>
+    <h4>However, this also means there are multiple potential functions that have the same derivative. </h4>
+    <h4>For example...</h4>
+     <img src="images/anti_deriv.png" class="centerimage"  style="width:90%;">
+    <br></br>
+    <br></br>
+    
+</div>    
+    
+    
+    
 
-
-
-
-
-
-
+<A Name="optimization">
+<div  id = "mainbodycontent">
+        <h1>Optimization</h1>
 </div>
 
+<A Name="linear">
+<div  id = "mainbodycontent">
+        <h1>Linearization &amp; Differentials</h1>
+</div>
 
+<A Name="rr">
+<div  id = "mainbodycontent">
+        <h1>Related Rates</h1>
+</div>
 
-
-
-
-
-
-
+</div>
 
 
 
