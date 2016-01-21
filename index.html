@@ -37,6 +37,7 @@
     <li id = "snavbarli"><a href="#applying">Applying Derivatives
 
 </a></li>
+    <li id = "snavbarli"><a href="#antider">Antiderivatives</a></li>
     <li id = "snavbarli"><a href="#extrema">Extrema</a></li>
     <li id = "snavbarli"><a href="#optimization">Optimization</a></li>
     <li id = "snavbarli"><a href="#linear">Linearization &amp; Differentials</a></li>
@@ -144,6 +145,11 @@
     <h3 style="text-align:center;">A discontinous function</h3> <img src="images/dicontin_function.png " class="centerimage"  style="width:40%;">
     <h3 style="text-align:center;">A continous function</h3> <img src="images/contin_function.png" class="centerimage" style="width: 40%;" >
     
+    
+    <h2>Intermediate Value Theorem</h2>
+    <h4>The intermediate Value theorem for continuous states that the function f(x), that is continuous on the closed interval of [a,b] will take on every value between f(a) and f(b). It is important to realize that this theorem only applies if f(x) is continuous at EVERY point in the interval [a,b].</h4>
+    
+    <img src="images/intermediate.png" class="centerimage"  style="width:50%;">
         <h2>Average Rates of Change and Secants Lines</h2>
             
     
@@ -459,6 +465,28 @@
 
 </div>
 
+
+    
+    
+<A Name="antider">
+<div  id = "mainbodycontent">
+        <h1>Antiderivatives &amp; Mean Value Theorem</h1>
+    <h2>Mean Value Theorem</h2>
+    <h4>The mean value theorem states that if f(x) is continuous at every point on the closed interval [a,b] and differentiable at every point of its interior (a,b) then there is at least one point c in (a,b) where<img src="images/mean_value.png"  style="width:35%"></h4> 
+    
+    <h4>In other words this means that the instantaneous rate of change of a function at, at least one point is equivalent to the average rate of change of the function from a to b. </h4>
+    
+    <h2>Antiderivatives</h2>
+    <h4>Employing the concept of the mean value theorem antiderivatives can be found through the process of antidifferentiation. Antidifferentiation employs many of the same rules used to take derivatives but in reverse. </h4>
+    <h4>For example we know that f’(x) of a constant function is 0. Applying that in reverse, the antiderivative of a zero function must be a constant function.</h4>
+    <h4>However, this also means there are multiple potential functions that have the same derivative. </h4>
+    <h4>For example...</h4>
+     <img src="images/anti_deriv.png" class="centerimage"  style="width:90%;">
+    <br></br>
+    <br></br>
+    
+</div>    
+
 <A Name="extrema">
 <div  id = "mainbodycontent">
         <h1>Extrema</h1>
@@ -535,26 +563,6 @@
 </div>
     
     
-<A Name="optimization">
-<div  id = "mainbodycontent">
-        <h1>Antiderivatives &amp; Mean Value Theorem</h1>
-    <h2>Mean Value Theorem</h2>
-    <h4>The mean value theorem states that if f(x) is continuous at every point on the closed interval [a,b] and differentiable at every point of its interior (a,b) then there is at least one point c in (a,b) where<img src="images/mean_value.png"  style="width:35%"></h4> 
-    
-    <h4>In other words this means that the instantaneous rate of change of a function at, at least one point is equivalent to the average rate of change of the function from a to b. </h4>
-    
-    <h2>Antiderivatives</h2>
-    <h4>Employing the concept of the mean value theorem antiderivatives can be found through the process of antidifferentiation. Antidifferentiation employs many of the same rules used to take derivatives but in reverse. </h4>
-    <h4>For example we know that f’(x) of a constant function is 0. Applying that in reverse, the antiderivative of a zero function must be a constant function.</h4>
-    <h4>However, this also means there are multiple potential functions that have the same derivative. </h4>
-    <h4>For example...</h4>
-     <img src="images/anti_deriv.png" class="centerimage"  style="width:90%;">
-    <br></br>
-    <br></br>
-    
-</div>    
-    
-    
     
 
 <A Name="optimization">
@@ -565,6 +573,16 @@
 <A Name="linear">
 <div  id = "mainbodycontent">
         <h1>Linearization &amp; Differentials</h1>
+    <h2>Linearization</h2>
+    <h4>Linearization allows for you to approximate values of a function near a point of tangency. This works because as long as you stay relatively close to the point of tangency, the tangent line provides as fair representation of the actual curve. </h4>
+    <h4>This is incredibly useful for calculating values of functions such as the sqrt(1.02) or sin(pi - .02) without the need of a calculator. </h4>
+    <h4>To find the equation L(x) of the tangent line at the point x = a you use the equation L(x) = f(a) + f’(a)(x-a). By using a value of ‘a’ near to the desired x value you ensure a more accurate approximation.  After finding the equation you plug in the x value you want to find and the linearization will give you an approximation of that value. </h4>
+    <h4>However, since it is just an approximation it will always over or underestimate. It is possible to determine which will occur by examining the concavity of the function at x = a. If the function is concave down, the linearization will overestimate, while if the function is concave up the linearization will underestimate. </h4>
+    
+    <h4>give example AP</h4>
+    
+    <h2>Differentials</h2>
+    
 </div>
 
 <A Name="rr">
