@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Calc Project</title>
+    <title>86 Days of Calculus</title>
     <link rel="shortcut icon" type="image/png" href="favicon.png"/>
     
     <link rel="stylesheet" type="text/css" href="maincss.css"</link>
@@ -96,22 +96,70 @@
             <img class = "centerimage" src="images/poly_rule.png">
             <h4>This rule is arrived at when using the 6 basic properties, as shown below the final limit is exactly the same as simply substituting the value x approaches.</h4>
             <img class = "centerimage" src="images/poly_proof.jpg" style = "width: 95%;">
+    
+    <h4>**Barron's AP Problem**</h4>
+    <img class = "centerimage" src="images/limit_ex3.png" style = "width: 75%;">
         
             <h2>Finding Limits Graphically &amp; Numerically</h2>
     
     <h3>Numerically</h3>
     <h4>By making a table of the x and f(x) values extremely close to the point x approaches you are able to determine the limit. This also particularly useful for finding the limit even when the function is not defined at the point, because you still see the value that f(x) approaches as x→ a. To ensure precision you should use at a minimum x values within .01 of the value x approaches. </h4>
-    <h4>For example in this AP problem from the Grey &amp; Maroon review book the value of the limit can be found using the following table. </h4>
-     <h4>give example AP problem</h4>
+    <h4>For example in this AP problem from the Barron's AP Calc review book, the value of the limit can be found using the following table. </h4>
     
+     <img class = "centerimage" src="images/table_example.jpg" style="width: 50%">
+    <br></br>
+    <table border="1" style="width:85%; border-collapse: collapse;margin-left:auto;margin-right:auto;text-align:center">
+    <tr>
+        <td>x values</td>
+        <td>y values</td>
+        
+        
+        </tr>
+        
+        <tr>
+        <td>-1.03</td>
+            <td>2.0587</td>
+        </tr>
+        
+        <tr>
+        <td>-1.02</td>
+            <td>2.0394</td>
+        </tr>
+        
+        <tr>
+        <td>-1.01</td>
+            <td>2.0199</td>
+        </tr>
+        
+        <tr>
+        <td>-1</td>
+            <td>2</td>
+        </tr>
+        
+        <tr>
+        <td>-.99</td>
+            <td>1.9798</td>
+        </tr>
+        <tr>
+        <td>-.98</td>
+            <td>1.9594</td>
+        </tr>
+        
+    </table>
+
+<h4>As you can see the as x approaches -1 f(x) approaches 2.</h4>
     
     <h3>Graphically</h3>
     <h4>To find the limit graphically you can can graph the function you are trying to find the limit of and then simply by looking at the graph see the value f(x) approaches. If it is difficult to determine the exact value f(x) approaches you can use your calculators tool to find f(x) at any x value. </h4>
-    <h4>give example AP problem</h4>
+   
+<h4>For example in this AP problem from the Grey &amp; Maroon AP prep book, the value of the limit can be found with graphs.</h4>
+<img class = "centerimage" src="images/limit_graphical_example.png" style="width: 50%">
+ <img class = "centerimage" src="images/limit_graphical2.png" style="width: 50%">
+<h4>As you can see as x --> infinity the limit is 3 as x --> +infinity, and -7 as x --> -infinity.</h4>
     
             <h2>Right and Left Hand Limits</h2>
-    <h4>The limit of a function can be broken up into both a <strong>right hand</strong> and <strong>left hand limit</strong>. The process for finding these limits is basically the same as finding general limits; however, a function such can approach a different value from the right and left and sides. This is a key concept when evaluating continuity at a point. In the discontinuous function below you can see how from the right hand side the function approaches on value and from the left hand side it approaches another value. </h4>
-    <h4>insert picutre</h4>
+    <h4>The limit of a function can be broken up into both a <strong>right hand</strong> and <strong>left hand limit</strong>. The process for finding these limits is basically the same as finding general limits; however, a function such can approach a different value from the right and left and sides. This is a key concept when evaluating continuity at a point. In the discontinuous function below you can see how from the right hand side the function approaches one value and from the left hand side it approaches another value at x =1. </h4>
+    <img class = "centerimage" src="images/discon_ex1.png" style="width: 50%">
     <h4>The notation for the right and left hand limits approaching the value 'C' is as follows. </h4>
     <h4 style="text-align:center">Right Hand Limit</h4>
     <img src="images/righthand_limit.png" class = "centerimage" style="width:20
@@ -127,7 +175,10 @@
     <h4>By evaluating the limit of a function as the x value approaches 土infinity you are able to find the horizontal asymptote of a function. This is true as long as the value the function approaches is a rational number. It is also important to keep in mind that a function can have multiple horizontal asymptotes as it does not have to approach the same value when going to + infinity and - infinity. </h4>
     <img src="images/horizontal_as.png" class="centerimage"  style="width:40%;">
     <h4>To evaluate limits as x → 土 infinity you can use the same rules used to evaluate limits as x → C, where C is any constant. </h4>
-    
+
+
+    <h4>**Barron's AP Problem**</h4>
+  <img src="images/hor_ex1.png" class = "centerimage" style="width:80%;">
     
     <h3>Vertical Asymptotes</h3>
     <h4>A vertical asymptote occurs when the right or left hand limit of a function is 土 infinity as x approaches a certain value. In the example below a vertical asymptote occurs at x = 0.</h4>
@@ -136,7 +187,7 @@
     
     
             <h2>Application - Continuity </h2>
-        <h4>Limits can be used to determine whether a function has continuity at a point. If a limit fails to exist at point C, C is a <i><strong>point of discontinuity</strong></i> and the entire function is considered <i><strong>discontinuous</strong></i>. Continuity at a point can be tested for interior points by evaluating the right and left hand limits as x → C. </h4>
+        <h4>Limits can be used to determine whether a function has continuity at a point. If a limit fails to exist at point C, C is a <i><strong>point of discontinuity</strong></i> and the entire function is considered <i><strong>discontinuous</strong></i>. Continuity at a point can be tested for interior points by evaluating the right and left hand limits as x → C. Additionally the the value at x = a must exist.</h4>
     <h3>If the limit fails to exist from either side, or the right and left handed limits are not equal the limit at that point does not exist. </h3>
     <h4>To find if a function with the domain [a,b] is continuous at endpoints, the right hand limit, <img src="images/righthand_limit_end.png" style="width:20
         %; height: 50px;">, must exist for the function to be continuous at a right endpoint. The left hand limit, <img src="images/lefthand_limit_end.png" style="width:20
@@ -145,6 +196,8 @@
     <h3 style="text-align:center;">A discontinous function</h3> <img src="images/dicontin_function.png " class="centerimage"  style="width:40%;">
     <h3 style="text-align:center;">A continous function</h3> <img src="images/contin_function.png" class="centerimage" style="width: 40%;" >
     
+ <h4>**Grey &amp; Maroon AP Problem**</h4>
+  <img src="images/rl_limex.png" class = "centerimage" style="width:85%;">
     
     <h2>Intermediate Value Theorem</h2>
     <h4>The intermediate Value theorem for continuous states that the function f(x), that is continuous on the closed interval of [a,b] will take on every value between f(a) and f(b). It is important to realize that this theorem only applies if f(x) is continuous at EVERY point in the interval [a,b].</h4>
@@ -165,7 +218,12 @@
     
 <h3>This can be demonstrated in the viewer below. By making the value of ‘H’ (the blue dot) closer to that of ‘A’ (red dot) the variable ‘m’ approaches the slope of the tangent line at x = a (this is the black line when h is infinitely close to A). </h3>
 
-<div id="calculator1" style="padding-bottom: 100px;"></div>
+<div id="calculator1"></div>
+
+<h4>**Grey &amp; Maroon AP Problem**</h4>
+  <img src="images/limh.png" class = "centerimage" style="width:85%;">
+<br></br>
+                                                                     
  
 <A Name="derivatives"> 
      </div>
@@ -174,9 +232,18 @@
         <h1>Derivatives</h1>
         
         <h2>Definition</h2>
+        <h4>The derivative of a function f, with respect to the variable is is equivalent to f’ whose value at x is <img src="images/deriv_def_2.png"  class = "centerimage" style="width:30%;"> <br></br>provided that limit exists</h4>
+        
+        
+        <h4>This formula gives you the general equation for the derivative of a function. From there you can plug in any x value and find the derivative at that point. </h4>
+        
+        <h3>Derivative at a Point (Alternative Definition)</h3>
+        
+        <h4>This alternate definition allows for the derivative (slope of the tangent line) to be found at any continuous point ‘x’ to be found. </h4>
+        
         <h4>The derivative of f, denoted as f’, at 'a' is the instantaneous rate of change (slope of tangent line), of a function 'f' when x = a. For this value to exist the limit must exist at the point ‘a’ and the function must be continuous at that point.</h4>
         <img src="images/deriv_def.png" class = "centerimage">
-        <h4>This formula allows the derivative (slope of the tangent line) to be found at any continuous point ‘x’ to be found. </h4>
+        
         <h2>Derivatives &amp; Limits</h2>
         <h3>Derivatives employ many of the same concepts as limits. </h3>
         <h4>A function is considered <strong>differentiable</strong> on a closed interval [a,b] if it has a derivative at every interior point. Additionally the limits at the endpoints must exist. To test if the limit exists at a right enpoint, 'b', take the righthand limit at that point.</h4>
@@ -186,6 +253,10 @@
         <h4>As derivatives are limits, for a derivative to exist at a point the limit must exist, which requires the right and left hand derivatives match at the given point.  </h4>
         <img src="images/equal_deriv_limit.png" class = "centerimage">
         <h4> As a result, if a derivative exists a point  x = a then the function is continuous at the point x = a. However the converse of this statement is not always true. For example the function |x| is continuous but not differentiable at x = 0.</h4>
+        
+        
+        <h4>**Grey &amp; Maroon AP Problem**</h4>
+  <img src="images/limh.png" class = "centerimage" style="width:85%;">
         
         <h2>Derivatives Failing to Exist</h2>
         <h3>Corners</h3>
@@ -215,9 +286,9 @@
         
         <h2>Intermediate Value Theorem for Derivatives</h2>
         <h4>If a function f(x) is differentiable on the interval [a,b], then f’ takes on every value between f’(a) and f’(b). This builds upon the more basic intermediate theorem which states: a function that is continuous on the interval [a,b] takes on every value between f(a) and f(b).</h4>
-        <h2>Conclusion</h2>
+        
         <A Name="findingderivatives">
-        <h4>Some text some text some text some text</h4>     
+          
     </div>
     
      <div  id = "mainbodycontent">
@@ -349,6 +420,11 @@
 <h4>The chain rule states that if the function f is differentiable at g(x) and the function g is differentiable at x, then f(g(x)) is differentiable at x. <br></br>Additionally it states that: the derivative of f(g(x)) is equivalent to the derivative of the outside function, f’ ,at the value of the inside function g(x), multiplied by the derivative of the inside g’. </h4>
          <img src="images/chian_rule.png" class = "centerimage" style="width: 45%;">
         
+<h4>**Barron's AP Problem**</h4>
+<h4>Find the derivative of the function.</h4>   
+<img class = "centerimage" src="images/chain.png" style = "width: 75%;">
+<h4>Solution below.</h4>
+<img class = "centerimage" src="images/chain_solve.jpg" style = "width: 75%;">
 
 <h2>Exponential and Log Functions </h2>
 <h4>Functions involving e<sup>x</sup> and and the ln(x) are very important to modeling exponential growth functions. By learning how to take the derivative of these functions you can easily determine the instantaneous rate of change of these functions at any moment. </h4>
@@ -568,6 +644,11 @@
 <A Name="optimization">
 <div  id = "mainbodycontent">
         <h1>Optimization</h1>
+    <h4>Optimization uses the concept of solving for extrema, to “optimize” or find the maximums and minimums of functions in a variety of contexts and with various restraints. </h4>
+    <h4>To do this you must first determine what function will output the desired value. You should assign a variable to represent this equality that is being optimized. </h4>
+    <h4>Then take the derivative of the function and either use the various methods described above to find the extrema of the function. The context of the problem may help you infer whether you are looking for a minimum or maximum, or if you can immediately disregard certain critical points. </h4>
+    <h4>If you find multiple x values that may provide valid answers you can simply substitute them into the original function and determine which value correctly answers the question. </h4>
+    <h4> example AP</h4>
 </div>
 
 <A Name="linear">
@@ -582,12 +663,32 @@
     <h4>give example AP</h4>
     
     <h2>Differentials</h2>
+    <h4>Differentials are used to find ‘dy’, the estimated change in y, based upon a certain change in x known as ‘dx’. Differentials, similar to linearization, use the tangent line at a point to estimate the change, so the ‘dy’ value you find will not give the exact change in a function from a to a + dx, but it should be very close as long as ‘dx’ is minimal. </h4>
+    
+    <img src="images/dy.png" class="centerimage"  style="width:50%;">
+    <h4>The equation to find dy is dy = f’(a)dx</h4>
+    <h3>Using differentials to evaluate change</h3>
+    <h4>This simple example shows how to find ‘dy’ in the function y = 5x<sup>2</sup> + 4x when ‘dx’ is .02 and x = 3.</h4>
+    <h4>You start by taking the derivative of both sides and get</h4>
+    <h3>dy = (10x + 4) dx</h3>
+    <h4>Then substitute in the values for dx and x.</h4>
+    <h3>dy = (10(3)+4)(.02) = .68</h3>
+    <h4>Shown Below is a more complicated AP style problem from the grey and maroon prep book. </h4>
+    <h4>give example AP problem</h4>
     
 </div>
 
 <A Name="rr">
 <div  id = "mainbodycontent">
         <h1>Related Rates</h1>
+    <h4>If several variables are functions of time t, it is possible to obtain an equation that relates their corresponding rates by implicitly differentiating with respect to t.  </h4>
+    <h4>Before you find the final equation relating their rates it is a good idea to make a list of the information you have and want, draw a diagram, and determine a ‘governing equation’ that will help you relate the variables.</h4>
+    <h4>Plug in any values that are constant so that when you take the derivative they do not affect your relation function. Then you take the derivative of both sides of the equation with respect to t.  After doing so substitute in the remaining values and solve for the rate you were trying to find. Make sure to keep track of units throughout this whole process.</h4>
+    <h4>This process is demonstrated in the below example AP problem.</h4>
+    <h4>Caramel runs into a conical tank at a rate of 32 in<sup>3</sup>/min. The tank stands point down and has a height of 18 inches deep and a base radius of 6 in. How fast is the caramel level rising when the caramel level is 8 inches deep? </h4>
+    <img src="images/cone.png" class="centerimage"  style="width:80%;">
+    <br></br>
+   
 </div>
 
 </div>
