@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Calc Project</title>
+    <title>86 Days of Calculus</title>
     <link rel="stylesheet" type="text/css" href="maincss.css"</link>
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'> 
+    
+    <script src="https://www.desmos.com/api/v0.4/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6">        </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
  
 </head>
 <body>
 
 <ul id = "tnavbar">
-  <li id = "tnavbarli"><a href="index.html">Content</a></li>
+  <li id = "tnavbarli"><a href="index.html">Concepts</a></li>
   <li id = "tnavbarli"><a class="active" href="me.html">About Me</a></li>
-  <li id = "tnavbarli"><a href="#other">Other</a></li>
 </ul>
     
 <ul id = "snavbar">
@@ -21,6 +24,12 @@
     </ul> 
     
     <div id = "grad1">
+        
+         <progress value="0" id="progressBar">
+            <div class="progress-container">
+        <span class="progress-bar"></span>
+        </div>
+            </progress>
     <A Name="strengths">
 <div id = "homediv">
 
@@ -28,14 +37,12 @@
         
         <h1>Strengths</h1>
         
-        <h2>Strength 1</h2>
+        <h2>Personal</h2>
         <h4>Some text some text some text some text</h4>
         
-        <h2>Strength 2</h2>
+        <h2>Calculus</h2>
         <h4>Some text some text some text some text</h4>
         
-        <h2>Strength 3</h2>
-        <h4>Some text some text some text some text</h4>
             <A Name="weaknesses"> 
         <h4>Some text some text some text some text</h4>
            
@@ -44,24 +51,18 @@
      
     <div = id = "mainbodycontent">
         <h1>Weaknesses</h1>
-        <img id="mainbodycontentimg" src="images/extrema.png">
         
-        <h2>Finding Extrema</h2>
-        <h3>Finding Critical Points</h3>
+              <h2>Personal</h2>
         <h4>Some text some text some text some text</h4>
         
-        <h2>Domain and Endpoints</h2>
+        <h2>Calculus</h2>
         <h4>Some text some text some text some text</h4>
-        
-        <h2>Second Derivative Test</h2>
-        <h4>Some text some text some text some text</h4>
-        
-        <h2>Concavity</h2>
-        <A Name="improvement">
-        <h4>Some text some text some text some text</h4>     
+         <A Name="improvement">
+    
     </div>
         
         <div = id = "mainbodycontent">
+            
         <h1>Improvement Plan</h1>
         
         <h2>Creatiing Equation</h2>
@@ -84,3 +85,133 @@
     </div>
     
 </html>
+        
+             <!-- start jquery-->
+    <script>
+    $(document).ready(function(){
+   
+    /*$('body').css('opacity', '0').fadeTo(1000, 1,'swing'); 
+   
+
+         $("#mainbodycontent")
+    .css("margin-left",-$(this).width())
+    .animate({
+        marginLeft:'0%'
+    }, 0);
+        
+           $("#mainbodycontent")
+    .css("margin-left",-$(this).width())
+    .animate({
+        marginLeft:'10%'
+    }, 2500);
+        ////*/
+        
+       
+        $('#tnavbar').hide();
+        $('#tnavbar').slideDown(2500);
+         
+        $('#snavbar').hide();
+        $('#snavbar').slideDown(2500);
+        
+       $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname) {
+      var $target = $(this.hash);
+      $target = $target.length && $target
+      || $('[name=' + this.hash.slice(1) +']');
+      if ($target.length) {
+        var targetOffset = $target.offset().top;
+        $('html,body')
+        .animate({scrollTop: targetOffset}, 1000);
+       return false;
+      }
+    }
+  });
+	
+});
+        </script>
+        
+        <!-- end jquery -->
+        <script>
+        
+        $(document).ready(function(){
+                var getMax = function(){
+        return $(document).height() - $(window).height();
+    }
+    
+    var getValue = function(){
+        return $(window).scrollTop();
+    }
+    
+    if('max' in document.createElement('progress')){
+        // Browser supports progress element
+        var progressBar = $('progress');
+        
+        // Set the Max attr for the first time
+        progressBar.attr({ max: getMax() });
+
+        $(document).on('scroll', function(){
+            // On scroll only Value attr needs to be calculated
+            progressBar.attr({ value: getValue() });
+        });
+      
+        $(window).resize(function(){
+            // On resize, both Max/Value attr needs to be calculated
+            progressBar.attr({ max: getMax(), value: getValue() });
+        });   
+    }
+    else {
+        var progressBar = $('.progress-bar'), 
+            max = getMax(), 
+            value, width;
+        
+        var getWidth = function(){
+            // Calculate width in percentage
+            value = getValue();            
+            width = (value/max) * 100;
+            width = width + '%';
+            return width;
+        }
+        
+        var setWidth = function(){
+            progressBar.css({ width: getWidth() });
+        }
+        
+        $(document).on('scroll', setWidth);
+        $(window).on('resize', function(){
+            // Need to reset the Max attr
+            max = getMax();
+            setWidth();
+        });
+    }
+});
+  $('#flat').addClass("active");
+  $('#progressBar').addClass('flat');
+    
+$(document).ready(function(){
+  
+  $(document).on('scroll', function(){
+
+      maxAttr = $('#progressBar').attr('max');
+      valueAttr = $('#progressBar').attr('value');
+      percentage = (valueAttr/maxAttr) * 100;
+      
+      if(percentage<49){
+        document.styleSheets[0].addRule('.semantic', 'color: green');
+        document.styleSheets[0].addRule('.semantic::-webkit-progress-value', 'background-color:                     rgb(50,120,220)');
+        document.styleSheets[0].addRule('.semantic::-moz-progress-bar', 'background-color: rgb(50,120,220)');
+      }
+      else if(percentage<98){
+        document.styleSheets[0].addRule('.semantic', 'color: orange');
+        document.styleSheets[0].addRule('.semantic::-webkit-progress-value', 'background-color: orange');
+        document.styleSheets[0].addRule('.semantic::-moz-progress-bar', 'background-color: orange');
+      }
+      else {
+        document.styleSheets[0].addRule('.semantic', 'color: green');
+        document.styleSheets[0].addRule('.semantic::-webkit-progress-value', 'background-color: green');
+        document.styleSheets[0].addRule('.semantic::-moz-progress-bar', 'background-color: green');
+      }      
+  });
+  
+});
+            </script>
